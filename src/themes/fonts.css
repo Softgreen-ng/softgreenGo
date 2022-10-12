@@ -1,0 +1,13 @@
+@font-face {
+    font-family: muli;
+    src: url("../../public/fonts/Muli-Regular.ttf");
+}
+@font-face {
+    font-family: 'muli bold';
+    src: url("../../public/fonts/Muli-Bold.ttf");
+}
+@font-face {
+    font-family: museo;
+    src: url("../../public/fonts/MuseoSansRounded-500.ttf");
+}
+

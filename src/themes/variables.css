@@ -1,0 +1,9 @@
+:root{
+    --softgreen-primary:#40b040;
+    --softgreen-secondary: #ffcb0a;
+    --softgreen-tertiary: #b3b3b3;
+    --bs-green: #40b040 !important;
+    --bs-success: #40b040 !important;
+    --softgreen-yellow: #ffcb0a ;
+    --softgreen-yellow-dark: #fdb839;
+}

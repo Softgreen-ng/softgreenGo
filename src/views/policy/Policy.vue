@@ -1,0 +1,1263 @@
+<template>
+    <div class="px-3">
+
+         <div class="text-start py-2 pt-4">
+            <div class="text-center text-rt-yellow">
+                <font class="h3 font-1-e-bold">
+                    TERMS AND CONDITIONS
+                </font><br>
+                <font class="text-gray font-1-s-bold h6">
+                    Last updated[April 8, 2022]
+                </font>
+            </div>
+        </div>
+        <h2 style="padding-top: 4pt;padding-left: 7pt;text-indent: 0pt;text-align: left;">1.0 INTRODUCTION</h2>
+        <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        <p style="padding-left: 7pt;text-indent: 3pt;line-height: 147%;text-align: justify;">RENTOUT LTD has created
+            this
+            privacy policy to demonstrate our commitment to the privacy of the users of our websites/ application.
+            [Rentout Ltd]
+            (“we” or “us” or “our”) respects the privacy of our users (“user” or “you”). This Privacy Policy explains
+            how we
+            collect, use, disclose, and safeguard your information when you visit our website [<span class="h1">name of
+                website.com</span>] [<span class="h1">and our mobile application</span>], including any other media
+            form, media
+            channel, mobile website, or mobile application related or connected thereto (collectively, the “Site”).</p>
+        <p style="padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">Please read the following
+            to learn
+            more about our privacy policy, and how we treat personally identifiable information collected from our
+            visitors and
+            users. If you do not agree with the terms of this privacy policy, please do not access the site.</p>
+        <h2 style="padding-left: 7pt;text-indent: 0pt;line-height: 14pt;text-align: left;">2.0 WHAT THIS PRIVACY POLICY
+            COVERS
+        </h2>
+        <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">Your
+            utilization
+            of any of our services warrant that you will not make unlawful use of this website or any contents and
+            materials we
+            provide through other means with which we correspond with you or final parties on your behalf.</p>
+        <p style="padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">This privacy policy does
+            not apply
+            to the practices of companies that <b>RENTOUT LTD </b>does not own or control, or of persons that RENTOUT
+            LTD does
+            not employ or manage, including any third-party content contributors bound by contract and any third-party
+            websites
+            to which Hotels.ng websites link.</p>
+        <ol id="l1">
+            <ol id="l2">
+                <li data-list-text="3.0">
+                    <h2 style="padding-left: 25pt;text-indent: -18pt;line-height: 14pt;text-align: left;">COLLECTION AND
+                        USE OF
+                        PERSONAL INFORMATION</h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        You
+                        can visit the websites of <b>RENTOUT LTD </b>without revealing any personal information.
+                        However,
+                        <b>RENTOUT LTD </b>needs certain personal information if you wish to use certain Rentout ltd
+                        services.
+                        By accessing the services of <b>RENTOUT LTD </b>and voluntarily providing us with the requested
+                        personal
+                        information, you consent to the collection and use of the information in accordance with this
+                        privacy
+                        policy. <b>RENTOUT LTD </b>undertakes not to violate the privacy of cardholders or any other
+                        cardholders
+                        who transact on RENTOUT LTD. We may collect information about you in a variety of ways. The
+                        information
+                        we may collect on the Site includes:
+                    </p>
+                </li>
+                <li data-list-text="3.1">
+                    <h2 style="padding-left: 23pt;text-indent: -16pt;line-height: 14pt;text-align: justify;">Personal
+                        Data</h2>
+                    <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;text-align: justify;">Personally
+                        identifiable
+                        information, such as your name, shipping address, email address, and telephone</p>
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;" />
+                    <p
+                        style="padding-top: 3pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        number, and demographic information, such as your age, gender, hometown, and interests, that you
+                        voluntarily give to us [when you register with the Site [or our mobile application,] or] when
+                        you choose
+                        to participate in various activities related to the Site [ and our mobile application], such as
+                        online
+                        chat and message boards. You are under no obligation to provide us with personal information of
+                        any
+                        kind, however your refusal to do so may prevent you from using certain features of the Site [ and
+                        our
+                        mobile application].</p>
+                </li>
+                <li data-list-text="3.2">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;line-height: 14pt;text-align: justify;">Derivative
+                        Data
+                    </h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        Information our servers automatically collect when you access the Site, such as your IP address,
+                        your
+                        browser type, your operating system, your access times, and the pages you have viewed directly
+                        before
+                        and after accessing the Site. [If you are using our mobile application, this information may
+                        also
+                        include your device name and type, your operating system, your phone number, your country, your
+                        likes
+                        and replies to a post, and other interactions with the application and other users via server
+                        log files,
+                        as well as any other information you choose to provide.]</p>
+                </li>
+                <li data-list-text="3.3">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;line-height: 14pt;text-align: justify;">Financial
+                        Data</h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        Financial information, such as data related to your payment method (e.g., valid credit card
+                        number, card
+                        brand, expiration date) that we may collect when you purchase, order, return, exchange, or
+                        request
+                        information about our services from the Site [or our mobile application]. [We store only very
+                        limited,
+                        if any, financial information that we collect. Otherwise, all financial information is stored by
+                        our
+                        payment processor, <u><b>[LIST PAYMENT OPTIONS],</b></u><b> </b>and you are encouraged to review
+                        their
+                        privacy policy and contact them directly for responses to your questions.</p>
+                </li>
+                <li data-list-text="3.4">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;text-align: justify;">Facebook Permissions</h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        <a href="https://www.facebook.com/about/privacy/" class="s2" target="_blank">The Site [and our
+                            mobile
+                            application] may by default access your </a><a
+                            href="https://developers.facebook.com/docs/facebook-login/permissions" class="s2"
+                            target="_blank">Facebook basic account information, including your name, email, gender,
+                            birthday,
+                            current city, and profile picture URL, as well as other information that you choose to make
+                            public.
+                            We may also request access to other permissions related to your account, such as friends,
+                            check-ins,
+                            and likes, and you may choose to grant or deny us access to each individual permission. For
+                            more
+                            information regarding Facebook permissions, refer to the Facebook Permissions </a>Reference
+                        page.
+                    </p>
+                </li>
+                <li data-list-text="3.5">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;line-height: 14pt;text-align: justify;">Data from
+                        Social
+                        Networks</h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        User
+                        information from social networking sites, such as [ Facebook, Google+, Instagram, Pinterest,
+                        Twitter],
+                        including your name, your social network username, location, gender, birth date, email address,
+                        profile
+                        picture, and public data for contacts, if you connect your account to such social networks. [If
+                        you are
+                        using our mobile application, this information may also include the contact</p>
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;" />
+                    <p style="padding-top: 3pt;padding-left: 7pt;text-indent: 0pt;text-align: left;">information of
+                        anyone you
+                        invite to use and/or join our mobile application.]</p>
+                </li>
+                <li data-list-text="3.6">
+                    <h2 style="padding-top: 6pt;padding-left: 24pt;text-indent: -17pt;text-align: left;">Mobile Device
+                        Data</h2>
+                    <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 146%;text-align: left;">
+                        Device
+                        information, such as your mobile device ID, model, and manufacturer, and information about the
+                        location
+                        of your device, if you access the Site from a mobile device.</p>
+                </li>
+                <li data-list-text="3.7">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;text-align: left;">Third-Party Data</h2>
+                    <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 146%;text-align: left;">
+                        Information from third parties, such as personal information or network friends, if you connect
+                        your
+                        account to the third party and grant the Site permission to access this information.</p>
+                </li>
+                <li data-list-text="3.8">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;text-align: left;">Data from Contests, Giveaways,
+                        and
+                        Surveys</h2>
+                    <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 146%;text-align: left;">
+                        Personal
+                        and other information you may provide when entering contests or giveaways and/or responding to
+                        surveys.
+                    </p>
+                </li>
+                <li data-list-text="3.9">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;text-align: left;">Mobile Application Information
+                    </h2>
+                    <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;text-align: left;">If you connect
+                        using our
+                        mobile application:</p>
+                    <ul id="l3">
+                        <li data-list-text="●">
+                            <p class="s3"
+                                style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;line-height: 147%;text-align: justify;">
+                                Geo-Location Information. <span class="p">We may request access or permission to and
+                                    track
+                                    location-based information from your mobile device, either continuously or while you
+                                    are
+                                    using our mobile application, to provide location-based services. If you wish to
+                                    change our
+                                    access or permissions, you may do so in your device’s settings.</span></p>
+                        </li>
+                        <li data-list-text="●">
+                            <p class="s3"
+                                style="padding-left: 43pt;text-indent: -18pt;line-height: 147%;text-align: justify;">
+                                Mobile Device Access- <span class="p">We may request access or permission to certain
+                                    features
+                                    from your mobile device, including your mobile device’s [Bluetooth, calendar,
+                                    camera,
+                                    contacts, microphone, reminders, sensors, SMS messages, social media accounts,
+                                    storage,] and
+                                    other features. If you wish to change our access or permissions, you may do so in
+                                    your
+                                    device’s settings.</span></p>
+                        </li>
+                        <li data-list-text="●">
+                            <p class="s3"
+                                style="padding-left: 43pt;text-indent: -18pt;line-height: 146%;text-align: justify;">
+                                Mobile Device Data- <span class="p">We may collect device information (such as your
+                                    mobile
+                                    device ID, model and manufacturer), operating system, version information and IP
+                                    address.</span></p>
+                        </li>
+                        <li data-list-text="●">
+                            <p class="s3"
+                                style="padding-left: 43pt;text-indent: -18pt;line-height: 147%;text-align: justify;">
+                                Push Notifications- <span class="p">We may request to send you push notifications
+                                    regarding your
+                                    account or the Application. If you wish to opt-out from receiving these types of
+                                    communications, you may turn them off in your device’s settings.</span></p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </ol>
+        <ol id="l4">
+            <ol id="l5">
+                <li data-list-text="4.0">
+                    <h2 style="padding-left: 25pt;text-indent: -18pt;line-height: 14pt;text-align: left;">USE OF YOUR
+                        INFORMATION</h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        Having
+                        accurate information about you permits us to provide you with a smooth, efficient, and
+                        customized
+                        experience. Specifically, we may use information collected about you via the Site [or our mobile
+                        application] to:</p>
+                    <ul id="l6">
+                        <li data-list-text="●">
+                            <p style="padding-left: 43pt;text-indent: -18pt;line-height: 14pt;text-align: left;">
+                                Administer
+                                sweepstakes, promotions, and contests.</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">Assist
+                                law
+                                enforcement and respond to subpoena.</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">Compile
+                                anonymous statistical data and analysis for use internally or with third parties.</p>
+                            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                            <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;" />
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-top: 3pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">Create
+                                and
+                                manage your account.</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p
+                                style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;line-height: 148%;text-align: left;">
+                                Deliver targeted advertising, coupons, newsletters, and other information regarding
+                                promotions
+                                and the Site [and our mobile application] to you.</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-left: 43pt;text-indent: -18pt;line-height: 14pt;text-align: left;">Email
+                                you
+                                regarding your account or order.</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">Enable
+                                user-to-user communications.</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p
+                                style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;line-height: 146%;text-align: left;">
+                                Fulfill and manage purchases, orders, payments, and other transactions related to the
+                                Site [and
+                                our mobile application].</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-left: 43pt;text-indent: -18pt;line-height: 146%;text-align: left;">
+                                Generate a
+                                personal profile about you to make future visits to the Site [and our mobile
+                                application] more
+                                personalized.</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-left: 43pt;text-indent: -18pt;text-align: left;">Increase the efficiency
+                                and
+                                operation of the Site [and our mobile application].</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p
+                                style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;line-height: 146%;text-align: left;">
+                                Monitor and analyze usage and trends to improve your experience with the Site [and our
+                                mobile
+                                application].</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-left: 43pt;text-indent: -18pt;text-align: left;">Notify you of updates to
+                                the Site
+                                [and our mobile application].</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">Offer
+                                new
+                                products, services, [mobile applications,] and/or recommendations to you.</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">Perform
+                                other
+                                business activities as needed.</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">Prevent
+                                fraudulent transactions, monitor against theft, and protect against criminal activity.
+                            </p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">Process
+                                payments
+                                and refunds.</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">Request
+                                feedback
+                                and contact you about your use of the Site [and our mobile application].</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">Resolve
+                                disputes
+                                and troubleshoot problems.</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">Respond
+                                to
+                                product and customer service requests.</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">Send you
+                                a
+                                newsletter.</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">Solicit
+                                support
+                                for the Site [and our mobile application] etc.</p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </ol>
+        <ol id="l7">
+            <ol id="l8">
+                <li data-list-text="5.0">
+                    <h2 style="padding-top: 6pt;padding-left: 25pt;text-indent: -18pt;text-align: justify;">DISCLOSURE
+                        OF YOUR
+                        INFORMATION</h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        RENTOUT LTD may disclose your personal information to third parties who work on behalf of
+                        RENTOUT LTD to
+                        provide products and services requested by you. We will share personal information for these
+                        purposes
+                        only with third parties whose privacy policies are consistent with ours or who agree to abide by
+                        our
+                        policies with respect to personal information</p>
+                    <p style="padding-left: 7pt;text-indent: 0pt;line-height: 148%;text-align: justify;">We may share
+                        information we have collected about you in certain situations. Your information may be disclosed
+                        as
+                        follows:</p>
+                </li>
+                <li data-list-text="5.1">
+                    <h2 style="padding-left: 23pt;text-indent: -16pt;line-height: 14pt;text-align: justify;">By Law or
+                        to
+                        Protect Rights</h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 148%;text-align: justify;">
+                        If we
+                        believe the release of information about you is necessary to respond to legal process, to
+                        investigate or
+                        remedy potential violations of our policies, or to protect the rights, property, and safety</p>
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;" />
+                    <p
+                        style="padding-top: 3pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        of
+                        others, we may share your information as permitted or required by any applicable law, rule, or
+                        regulation. This includes exchanging information with other entities for fraud protection and
+                        credit
+                        risk reduction.</p>
+                </li>
+                <li data-list-text="5.2">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;line-height: 14pt;text-align: justify;">Third-Party
+                        Service
+                        Providers</h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 146%;text-align: justify;">
+                        We may
+                        share your information with third parties that perform services for us or on our behalf,
+                        including
+                        payment processing, data analysis, email delivery, hosting services, customer service, and
+                        marketing
+                        assistance.</p>
+                </li>
+                <li data-list-text="5.3">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;text-align: justify;">Marketing Communications</h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 146%;text-align: justify;">
+                        With
+                        your consent, or with an opportunity for you to withdraw consent, we may share your information
+                        with
+                        third parties for marketing purposes, as permitted by law.</p>
+                </li>
+                <li data-list-text="5.4">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;text-align: justify;">Interactions with Other Users
+                    </h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        If you
+                        interact with other users of the Site [and our mobile application], those users may see your
+                        name,
+                        profile photo, and descriptions of your activity, including sending invitations to other users,
+                        chatting
+                        with other users, liking posts, following blogs.</p>
+                </li>
+                <li data-list-text="5.5">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;line-height: 14pt;text-align: justify;">Online
+                        Postings
+                    </h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 146%;text-align: justify;">
+                        When
+                        you post comments, contributions or other content to the Site [or our mobile applications], your
+                        posts
+                        may be viewed by all users and may be publicly distributed outside the Site [and our mobile
+                        application]
+                        in perpetuity.</p>
+                </li>
+                <li data-list-text="5.6">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;text-align: justify;">Third-Party Advertisers</h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        We may
+                        use third-party advertising companies to serve ads when you visit the Site [or our mobile
+                        application].
+                        These companies may use information about your visits to the Site [and our mobile application]
+                        and other
+                        websites that are contained in web cookies in order to provide advertisements about goods and
+                        services
+                        of interest to you.</p>
+                </li>
+                <li data-list-text="5.7">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;text-align: justify;">Affiliates</h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        We may
+                        share your information with our affiliates, in which case we will require those affiliates to
+                        honor this
+                        Privacy Policy. Affiliates include our parent company and any subsidiaries, joint venture
+                        partners or
+                        other companies that we control or that are under common control with us.</p>
+                </li>
+                <li data-list-text="5.8">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;line-height: 14pt;text-align: justify;">Business
+                        Partners
+                    </h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 146%;text-align: justify;">
+                        We may
+                        share your information with our business partners to offer you certain products, services or
+                        promotions.
+                    </p>
+                </li>
+                <li data-list-text="5.9">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;text-align: justify;">Offer Wall</h2>
+                    <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;text-align: justify;">Our mobile
+                        application
+                        may display a third-party hosted “offer wall.” Such an offer wall allows third-</p>
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;" />
+                    <p
+                        style="padding-top: 3pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        party
+                        advertisers to offer virtual currency, gifts, or other items to users in return for acceptance
+                        and
+                        completion of an advertisement offer. Such an offer wall may appear in our mobile application
+                        and be
+                        displayed to you based on certain data, such as your geographic area or demographic information.
+                        When
+                        you click on an offer wall, you will leave our mobile application. A unique identifier, such as
+                        your
+                        user ID, will be shared with the offer wall provider in order to prevent fraud and properly
+                        credit your
+                        account.]</p>
+                </li>
+                <li data-list-text="5.10">
+                    <h2 style="padding-left: 29pt;text-indent: -22pt;line-height: 14pt;text-align: justify;">Other Third
+                        Parties
+                    </h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        We may
+                        share your information with advertisers and investors for the purpose of conducting general
+                        business
+                        analysis. We may also share your information with such third parties for marketing purposes, as
+                        permitted by law. We are not responsible for the actions of third parties with whom you share
+                        personal
+                        or sensitive data, and we have no authority to manage or control third-party solicitations. If
+                        you no
+                        longer wish to receive correspondence, emails or other communications from third parties, you
+                        are
+                        responsible for contacting the third party directly</p>
+                </li>
+                <li data-list-text="5.11">
+                    <h2 style="padding-left: 28pt;text-indent: -21pt;line-height: 14pt;text-align: justify;">Sale or
+                        Bankruptcy
+                    </h2>
+                </li>
+            </ol>
+        </ol>
+        <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">If we
+            reorganize
+            or sell all or a portion of our assets, undergo a merger, or are acquired by another entity, we may transfer
+            your
+            information to the successor entity. If we go out of business or enter bankruptcy, your information would be
+            an
+            asset transferred or acquired by a third party. You acknowledge that such transfers may occur and that the
+            transferee may decline honor commitments we made in this Privacy Policy.</p>
+        <ol id="l9">
+            <ol id="l10">
+                <li data-list-text="6.0">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;line-height: 14pt;text-align: justify;">TRACKING
+                        TECHNOLOGIES</h2>
+                </li>
+                <li data-list-text="6.1">
+                    <h2 style="padding-top: 6pt;padding-left: 23pt;text-indent: -16pt;text-align: justify;">Cookies and
+                        Web
+                        Beacons</h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        We may
+                        use cookies, web beacons, tracking pixels, and other tracking technologies on the Site [and our
+                        mobile
+                        application] to help customize the Site [and our mobile application] and improve your
+                        experience. When
+                        you access the Site [or our mobile application], your personal information is not collected
+                        through the
+                        use of tracking technology. Most browsers are set to accept cookies by default. You can remove
+                        or reject
+                        cookies, but be aware that such action could affect the availability and functionality of the
+                        Site [or
+                        our mobile application]. You may not decline web beacons. However, they can be rendered
+                        ineffective by
+                        declining all cookies or by modifying your web browser’s settings to notify you each time a
+                        cookie is
+                        tendered, permitting you to accept or decline cookies on an individual basis.] By using the
+                        Site, you
+                        agree to be bound by our Cookie Policy.]</p>
+                    <p style="padding-left: 7pt;text-indent: 0pt;line-height: 148%;text-align: justify;">RENTOUT LTD
+                        also allows
+                        third party companies that are presenting advertisements on some of our pages to set and access
+                        their
+                        cookies on your computer. These cookies are not connected to any</p>
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;" />
+                    <p
+                        style="padding-top: 3pt;padding-left: 7pt;text-indent: 0pt;line-height: 146%;text-align: justify;">
+                        personal information. Third party cookie usage is subject to their own privacy policies, and
+                        RENTOUT LTD
+                        assumes no responsibility or liability for this usage.</p>
+                </li>
+                <li data-list-text="6.2">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;text-align: justify;">Internet-Based Advertising
+                    </h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        Additionally, we may use third-party software to serve ads on the Site [and our mobile
+                        application],
+                        implement email marketing campaigns, and manage other interactive marketing initiatives. This
+                        third-party software may use cookies or similar tracking technology to help manage and optimize
+                        your
+                        online experience with us. For more information about opting-out of interest-based ads, contact
+                        us.</p>
+                </li>
+                <li data-list-text="6.3">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;text-align: justify;">Website Analytics</h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">
+                        <a href="http://www.adobe.com/privacy/marketing-cloud.html" class="s2" target="_blank">We may
+                            also
+                            partner with selected third-party vendors[, such as [</a><a
+                            href="http://www.adobe.com/privacy/marketing-cloud.html" class="a" target="_blank">Adobe
+                        </a><span
+                            style=" color: black; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 12pt;">Analytics</span><a
+                            href="https://www.clicktale.com/company/privacy-policy/" class="s2" target="_blank">,]
+                            [</a><span
+                            style=" color: black; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 12pt;">Clicktale,</span><a
+                            href="https://clicky.com/terms" class="s2" target="_blank">] [</a><span
+                            style=" color: black; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 12pt;">Clicky</span><a
+                            href="https://www.cloudflare.com/security-policy/" class="s2" target="_blank">,] [</a><span
+                            style=" color: black; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 12pt;">Cloudfare</span><a
+                            href="https://www.crazyegg.com/privacy/" class="s2" target="_blank">,] [</a><a
+                            href="https://www.crazyegg.com/privacy/" class="a" target="_blank">Crazy </a><span
+                            style=" color: black; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 12pt;">Egg,</span><a
+                            href="https://policies.yahoo.com/us/en/yahoo/privacy/products/developer/index.htm"
+                            class="s2" target="_blank">] [</a><a
+                            href="https://policies.yahoo.com/us/en/yahoo/privacy/products/developer/index.htm" class="a"
+                            target="_blank">Flurry </a><span
+                            style=" color: black; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 12pt;">Analytics,</span><a
+                            href="https://support.google.com/analytics/answer/6004245?hl=en" class="s2"
+                            target="_blank">]
+                            [</a><a href="https://support.google.com/analytics/answer/6004245?hl=en" class="a"
+                            target="_blank">Google </a><span
+                            style=" color: black; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 12pt;">Analytics</span><a
+                            href="https://heapanalytics.com/privacy" class="s2" target="_blank">,] [</a><a
+                            href="https://heapanalytics.com/privacy" class="a" target="_blank">Heap </a><span
+                            style=" color: black; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 12pt;">Analytics</span><a
+                            href="https://www.inspectlet.com/legal#privacy" class="s2" target="_blank">,] [</a><span
+                            style=" color: black; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 12pt;">Inspectlet,</span><a
+                            href="https://signin.kissmetrics.com/privacy" class="s2" target="_blank">] [</a><span
+                            style=" color: black; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 12pt;">Kissmetrics,]</span><a
+                            href="https://mixpanel.com/privacy/" class="s2" target="_blank"> [</a><span
+                            style=" color: black; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 12pt;">Mixpanel,</span><a
+                            href="https://piwik.org/privacy/" class="s2" target="_blank">] [</a><span
+                            style=" color: black; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 12pt;">Piwik,</span>]
+                        and others], to allow tracking technologies and remarketing services on the Site [and our mobile
+                        application] through the use of first party cookies and third-party cookies, to, among other
+                        things,
+                        analyze and track users’ use of the Site [and our mobile application], determine the popularity
+                        of
+                        certain content and better understand online activity. By accessing the Site [our mobile
+                        application,],
+                        you consent to the collection and use of your information by these third-party vendors. You are
+                        encouraged to review their privacy policy and contact them directly for responses to your
+                        questions. We
+                        do not transfer personal information to these third-party vendors. However, if you do not want
+                        any
+                        information to be collected and used by tracking technologies, you can visit the third-party
+                        vendor.</p>
+                    <p style="padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">You should be
+                        aware
+                        that getting a new computer, installing a new browser, upgrading an existing browser, or erasing
+                        or
+                        otherwise altering your browser’s cookies files may also clear certain opt-out cookies,
+                        plug-ins, or
+                        settings.</p>
+                </li>
+                <li data-list-text="6.4">
+                    <h2 style="padding-left: 24pt;text-indent: -17pt;line-height: 14pt;text-align: justify;">Third-Party
+                        Websites</h2>
+                </li>
+            </ol>
+        </ol>
+        <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">The Site
+            [and our
+            mobile application] may contain links to third-party websites and applications of interest, including
+            advertisements
+            and external services, that are not affiliated with us. Once you have used these links to leave the Site [or
+            our
+            mobile application], any information you provide to these third parties is not covered by this Privacy
+            Policy, and
+            we cannot guarantee the safety and privacy of your information. Before visiting and providing any
+            information to any
+            third-party websites, you should inform yourself of the privacy policies and practices (if any) of the third
+            party
+            responsible for that website, and should take those steps necessary to, in your discretion, protect the
+            privacy of
+            your information. We are not responsible for the content or privacy and security practices and policies of
+            any third
+            parties, including other sites, services or applications that may be linked to or from the Site</p>
+        <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;" />
+        <p style="padding-top: 3pt;padding-left: 7pt;text-indent: 0pt;text-align: justify;">[or our mobile application].
+        </p>
+        <h2 style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;text-align: left;">7.0 CONSENT</h2>
+        <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">If you do
+            not
+            consent to the collection, use or disclosure of your personal information as outlined in this policy, please
+            do not
+            provide any personal information to RENTOUT LTD If you have provided personal information to RENTOUT LTD and
+            no
+            longer consent to its use or disclosure as outlined herein, please notify RENTOUT LTD through our contact
+            details.
+        </p>
+        <h2 style="padding-left: 7pt;text-indent: 0pt;line-height: 14pt;text-align: left;">8.0 SECURITY OF YOUR
+            INFORMATION</h2>
+        <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">We use
+            administrative, technical, and physical security measures to help protect your personal information. While
+            we have
+            taken reasonable steps to secure the personal information you provide to us, please be aware that despite
+            our
+            efforts, no security measures are perfect or impenetrable, and no method of data transmission can be
+            guaranteed
+            against any interception or other type of misuse. Any information disclosed online is vulnerable to
+            interception and
+            misuse by unauthorized parties. Therefore, we cannot guarantee complete security if you provide personal
+            information. We will safeguard your personal information from unauthorized access, through access control
+            procedures, network firewalls and physical security measures.</p>
+        <p style="padding-left: 7pt;text-indent: 0pt;line-height: 146%;text-align: justify;">Further, RENTOUT LTD
+            retains your
+            personal information only as long as necessary to fulfil the purposes identified above or as required by
+            law.</p>
+        <h2 style="padding-left: 7pt;text-indent: 0pt;text-align: left;">9.0 POLICY FOR CHILDREN</h2>
+        <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">We do not
+            knowingly solicit information from or market to children under the age of 18. If you become aware of any
+            data, we
+            have collected from children under age 18, please contact us using the contact information provided below.
+        </p>
+        <h2 style="padding-left: 7pt;text-indent: 0pt;line-height: 14pt;text-align: left;">10.0 CONTROLS FOR
+            DO-NOT-TRACK
+            FEATURES</h2>
+        <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">Most web
+            browsers
+            and some mobile operating systems [and our mobile applications] include a Do-Not-Track (“DNT”) feature or
+            setting
+            you can activate to signal your privacy preference not to have data about your online browsing activities
+            monitored
+            and collected. If you set the DNT signal on your browser, we will respond to such DNT browser signals. No
+            uniform
+            technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not
+            currently
+            respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be
+            tracked
+            online. If a standard for online tracking is adopted that we must follow in the future, we will inform you
+            about
+            that practice in a revised version of this Privacy Policy.</p>
+        <h2 style="padding-left: 7pt;text-indent: 0pt;line-height: 14pt;text-align: left;">11.0 CHANGES TO THIS PRIVACY
+            POLICY
+        </h2>
+        <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;text-align: justify;">We reserve the right to make
+            changes
+            to this Privacy Policy at any time and for any reason. We will</p>
+        <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;" />
+        <p style="padding-top: 3pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">alert you
+            about
+            any changes by updating the “Last Updated” date of this Privacy Policy. Any changes or modifications will be
+            effective immediately upon posting the updated Privacy Policy on the Site, and you waive the right to
+            receive
+            specific notice of each such change or modification.</p>
+        <p style="padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">You are encouraged to
+            periodically
+            review this Privacy Policy to stay informed of updates. You will be deemed to have been made aware of, will
+            be
+            subject to, and will be deemed to have accepted the changes in any revised Privacy Policy by your continued
+            use of
+            the Site after the date such revised Privacy Policy is posted. Your continued use of RENTOUT LTD websites
+            after any
+            such amendments signifies your acceptance thereof.</p>
+        <h2 style="padding-left: 7pt;text-indent: 0pt;line-height: 14pt;text-align: left;">12.0 OPTIONS REGARDING YOUR
+            INFORMATION</h2>
+        <ol id="l11">
+            <li data-list-text="12.">
+                <h2 style="padding-top: 6pt;padding-left: 23pt;text-indent: -16pt;text-align: left;">1 Account
+                    Information</h2>
+                <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;text-align: left;">You may at any time
+                    review or
+                    change the information in your account or terminate your account by:</p>
+                <ul id="l12">
+                    <li data-list-text="●">
+                        <p style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">Logging into
+                            your
+                            account settings and updating your account</p>
+                    </li>
+                    <li data-list-text="●">
+                        <p style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">Contacting
+                            us using
+                            the contact information provided below</p>
+                    </li>
+                    <li data-list-text="●">
+                        <p style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">[Other]</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">Upon your
+            request
+            to terminate your account, we will deactivate or delete your account and information from our active
+            databases.
+            However, some information may be retained in our files to prevent fraud, troubleshoot problems, assist with
+            any
+            investigations, enforce our Terms of Use and/or comply with legal requirements.]</p>
+        <ol id="l13">
+            <ol id="l14">
+                <li data-list-text="12.2">
+                    <h2 style="padding-left: 29pt;text-indent: -22pt;text-align: justify;">Emails and Communications
+                    </h2>
+                    <p
+                        style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 148%;text-align: justify;">
+                        If you
+                        no longer wish to receive correspondence, emails, or other communications from us, you may
+                        opt-out by:
+                    </p>
+                    <ul id="l15">
+                        <li data-list-text="●">
+                            <p style="padding-left: 43pt;text-indent: -18pt;line-height: 146%;text-align: left;">Noting
+                                your
+                                preferences at the time you register your account with the Site [or our mobile
+                                application]</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-left: 43pt;text-indent: -18pt;text-align: left;">Logging into your account
+                                settings and updating your preferences.</p>
+                        </li>
+                        <li data-list-text="●">
+                            <p style="padding-top: 6pt;padding-left: 43pt;text-indent: -18pt;text-align: left;">
+                                Contacting us
+                                using the contact information provided below</p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </ol>
+        <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 148%;text-align: left;">If you no
+            longer wish
+            to receive correspondence, emails, or other communications from third parties, you are responsible for
+            contacting
+            the third party directly.</p>
+        <h2 style="padding-left: 7pt;text-indent: 0pt;line-height: 14pt;text-align: justify;">13.0 GOVERNING LAW</h2>
+        <p style="padding-top: 1pt;padding-left: 7pt;text-indent: 0pt;line-height: 112%;text-align: justify;">This
+            privacy
+            policy is made pursuant to the Nigeria Data Protection Regulation 2019 and other relevant Nigerian laws,
+            regulations
+            or international conventions applicable to Nigeria. Where any provision of this Policy is deemed
+            inconsistent with a
+            law, regulation or convention, such provision shall be subject to the overriding law, regulation or
+            convention.</p>
+        <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;" />
+        <p style="padding-top: 3pt;padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: justify;">If you are
+            under
+            18 years of age, reside in Nigeria, and have a registered account with the Site [or our mobile application],
+            you
+            have the right to request removal of unwanted data that you publicly post on the Site [or our mobile
+            application].
+            To request removal of such data, please contact us using the contact information provided below, and include
+            the
+            email address associated with your account and a statement that you reside in California. We will make sure
+            the data
+            is not publicly displayed on the Site [or our mobile application], but please be aware that the data may not
+            be
+            completely or comprehensively removed from our systems.</p>
+        <h2 style="padding-left: 7pt;text-indent: 0pt;line-height: 14pt;text-align: left;">14.0 CONTACT US</h2>
+        <p style="padding-top: 6pt;padding-left: 7pt;text-indent: 0pt;line-height: 146%;text-align: left;">If you have
+            questions
+            or comments about this Privacy Policy, please contact us at: RENT OUT LTD</p>
+        <p style="padding-left: 7pt;text-indent: 0pt;line-height: 147%;text-align: left;">[Street Address] [City, State
+            Zip]
+            [Phone Number] [Email]</p>
+        <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;" />
+    </div>
+</template>
+
+<script>
+export default {
+    name: '',
+    components: {
+
+    },
+    data() {
+        return {
+            headerClass: "text-sg-primary font-1-e-bold h5",
+            paragraph: "text-start my-2 text-sm-sm"
+        }
+    }
+}
+</script>
+
+<style lang="less" scoped>
+* {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+}
+
+h2 {
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+.p,
+p {
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+    margin: 0pt;
+}
+
+.h1 {
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13pt;
+}
+
+.s2 {
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+.s3 {
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+.a {
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 12pt;
+}
+
+li {
+    display: block;
+}
+
+#l1 {
+    padding-left: 0pt;
+    counter-reset: c1 3;
+}
+
+#l1>li>*:first-child:before {
+    counter-increment: c1;
+    content: counter(c1, decimal)" ";
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#l1>li:first-child>*:first-child:before {
+    counter-increment: c1 0;
+}
+
+#l2 {
+    padding-left: 0pt;
+    counter-reset: c2 0;
+}
+
+#l2>li>*:first-child:before {
+    counter-increment: c2;
+    content: counter(c1, decimal)"." counter(c2, decimal)" ";
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+#l2>li:first-child>*:first-child:before {
+    counter-increment: c2 0;
+}
+
+#l3 {
+    padding-left: 0pt;
+}
+
+#l3>li>*:first-child:before {
+    content: "● ";
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+li {
+    display: block;
+}
+
+#l4 {
+    padding-left: 0pt;
+    counter-reset: d1 4;
+}
+
+#l4>li>*:first-child:before {
+    counter-increment: d1;
+    content: counter(d1, decimal)" ";
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#l4>li:first-child>*:first-child:before {
+    counter-increment: d1 0;
+}
+
+#l5 {
+    padding-left: 0pt;
+    counter-reset: d2 0;
+}
+
+#l5>li>*:first-child:before {
+    counter-increment: d2;
+    content: counter(d1, decimal)"." counter(d2, decimal)" ";
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+#l5>li:first-child>*:first-child:before {
+    counter-increment: d2 0;
+}
+
+#l6 {
+    padding-left: 0pt;
+}
+
+#l6>li>*:first-child:before {
+    content: "● ";
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+li {
+    display: block;
+}
+
+#l7 {
+    padding-left: 0pt;
+    counter-reset: e1 5;
+}
+
+#l7>li>*:first-child:before {
+    counter-increment: e1;
+    content: counter(e1, decimal)" ";
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#l7>li:first-child>*:first-child:before {
+    counter-increment: e1 0;
+}
+
+#l8 {
+    padding-left: 0pt;
+    counter-reset: e2 0;
+}
+
+#l8>li>*:first-child:before {
+    counter-increment: e2;
+    content: counter(e1, decimal)"." counter(e2, decimal)" ";
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+#l8>li:first-child>*:first-child:before {
+    counter-increment: e2 0;
+}
+
+li {
+    display: block;
+}
+
+#l9 {
+    padding-left: 0pt;
+    counter-reset: f1 6;
+}
+
+#l9>li>*:first-child:before {
+    counter-increment: f1;
+    content: counter(f1, decimal)" ";
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#l9>li:first-child>*:first-child:before {
+    counter-increment: f1 0;
+}
+
+#l10 {
+    padding-left: 0pt;
+    counter-reset: f2 0;
+}
+
+#l10>li>*:first-child:before {
+    counter-increment: f2;
+    content: counter(f1, decimal)"." counter(f2, decimal)" ";
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+#l10>li:first-child>*:first-child:before {
+    counter-increment: f2 0;
+}
+
+li {
+    display: block;
+}
+
+#l11 {
+    padding-left: 0pt;
+    counter-reset: g1 12;
+}
+
+#l11>li>*:first-child:before {
+    counter-increment: g1;
+    content: counter(g1, decimal)". ";
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+#l11>li:first-child>*:first-child:before {
+    counter-increment: g1 0;
+}
+
+#l12 {
+    padding-left: 0pt;
+}
+
+#l12>li>*:first-child:before {
+    content: "● ";
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+li {
+    display: block;
+}
+
+#l13 {
+    padding-left: 0pt;
+    counter-reset: h1 12;
+}
+
+#l13>li>*:first-child:before {
+    counter-increment: h1;
+    content: counter(h1, decimal)" ";
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#l13>li:first-child>*:first-child:before {
+    counter-increment: h1 0;
+}
+
+#l14 {
+    padding-left: 0pt;
+    counter-reset: h2 2;
+}
+
+#l14>li>*:first-child:before {
+    counter-increment: h2;
+    content: counter(h1, decimal)"." counter(h2, decimal)" ";
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+#l14>li:first-child>*:first-child:before {
+    counter-increment: h2 0;
+}
+
+#l15 {
+    padding-left: 0pt;
+}
+
+#l15>li>*:first-child:before {
+    content: "● ";
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+/* My Overwrite css classes */
+
+h2, h2::before {
+   color: var(--softgreen-orange)!important;
+   font-family: font-1 !important;
+   .font-1-bold !important;
+   margin-top: 20px;
+}
+b, p, span, a {
+   font-family: font-1 !important;
+}
+b {
+   color: var(--softgreen-yellow)!important;
+}
+
+/* Pseudo */
+.text-sg-primary{}
+.font-1-bold{}
+</style>
