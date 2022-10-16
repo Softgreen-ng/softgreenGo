@@ -19,12 +19,14 @@
                     <div class="h-100">
                         <check-out class="d-none d-md-block"></check-out>
 
+                    <div v-if="Object.keys(this.$store.state.cart).length > 1">
                         <a class="btn d-md-none btn-sg-primary p-2 mt-5" @click="goToLogin" v-if="!this.$store.getters.auth">
                             Proceeed to Checkout
                         </a>
                         <a class="btn d-md-none btn-sg-primary p-2 mt-5" href="/checkout" v-else>
                             Proceeed to Checkout
                         </a>
+                    </div>
                     </div>
                 </div>
             </div>

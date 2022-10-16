@@ -13,10 +13,10 @@
 		</div>
 		<div class="text-end font-2 p-1 mt-1 small fw-bold text-sg-secondary" @click="goToPage">
 			<del class="text-sm text-gray fw-normal">&#x20A6;{{ product.discounted_price }}</del>
-			&#x20A6;{{ product.price + " " + product.weight ?? "" + " " + product.unit }}
+			&#x20A6;{{ product.price  }}
 		</div>
 		<div class="text-start small font-1 fs-6 fw-bold">
-			{{ product.title }}<br>
+			{{ product.title + " " + product.weight ?? "" + " " + product.unit }}<br>
 			<span class="small text-rt-yellow font-1 font-2">
 				{{ product.location }}
 			</span>
@@ -74,7 +74,8 @@ export default {
 		},
 		AddtoCart() {
 			AddOrUpdateCart(this.product, this.quantity)
-			this.isVisible = false
+			this.modal.isVisible = false
+			this.$toast.success("Product Added to Cart")
 		}
 	}
 }

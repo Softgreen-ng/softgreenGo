@@ -43,7 +43,7 @@
                         <label class="my-2">
                             Whatsapp Number
                         </label>
-                        <input v-model="user.phone.whatsapp" type="tel" inputmode="numeric" minlength="13" maxlength="13"
+                        <input v-model="user.phone.whatsapp" type="tel" inputmode="numeric" minlength="11" maxlength="13"
                             class="btn bg-white text-start form-control font-1 shadow py-3 px-4" required="true" />
                     </div>
 
@@ -54,7 +54,7 @@
                                 (if different from Whatsapp)
                             </span>
                         </label>
-                        <input v-model="user.phone.contact" type="tel" inputmode="numeric" minlength="13" maxlength="13"
+                        <input v-model="user.phone.contact" type="tel" inputmode="numeric" minlength="11" maxlength="13"
                             class="btn bg-white text-start form-control font-1 shadow py-3 px-4" required="true" />
                     </div>
 
@@ -101,8 +101,8 @@ export default {
             passType: 'text',
             user: {
                 phone: {
-                    whatsapp:"234",
-                    contact:"234"
+                    whatsapp:"",
+                    contact:""
                 }
             },
             validations: {}

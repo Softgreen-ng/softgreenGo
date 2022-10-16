@@ -42,12 +42,12 @@
 
 
                     <!-- MODAL -->
-                    <div class="position-absolute bottom bg-white d-none rt-drpdwn shadow text-end rt-drp-ignore text-sm pt-5 pb-3 px-4 animate__animated animate__slideInDown "
-                        ref="dropdown" id="rt-dropdown" style="top:0">
+                    <div class="position-absolute bottom max-300 bg-white d-none rt-drpdwn shadow text-end rt-drp-ignore text-sm pt-5 pb-3 px-4 animate__animated animate__slideInDown "
+                        ref="dropdown" id="rt-dropdown" style="z-index:-1;">
 
 
                         <!-- INSIDE THE MODAL -->
-                        <div class="d-flex justify-content-end d-md-none rt-drp-ignore pe-point"
+                        <div class="d-flex pt-5 justify-content-end d-md-none rt-drp-ignore pe-point"
                             v-if="this.$store.getters.auth">
                             <span class="text-sm text-nowrap py-1 text-gray my-auto mx-2 rt-drp-ignore pe-point">
                                 {{ user.name }}

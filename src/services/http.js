@@ -26,9 +26,9 @@ const http = axios.create({
     headers: {
         "Authorization": "Bearer " + accessToken,
         accept: 'application/json',
-        // 'Content-Type': 'application/json',
+        'Content-Type': 'application/json',
     },
-    responseType: "application/json"
+    // responseType: "application/json"
 })
 // "content-type": "application/json",
 
