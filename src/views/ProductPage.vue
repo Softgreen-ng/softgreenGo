@@ -14,7 +14,7 @@
                         </div>
                         <div class="text-sg-secondary font-2 fs-5 fw-bold">
                             &#x20A6;{{ product.price }}
-                        <del class="text-sm text-gray">&#x20A6;{{ product.discounted_price }}</del>
+                        <del class="text-sm text-gray" v-if="product.discounted_price">&#x20A6;{{ product.discounted_price }}</del>
                         </div>
                         <div class="my-auto d-none">
                             <review-star review="2" class="small" />

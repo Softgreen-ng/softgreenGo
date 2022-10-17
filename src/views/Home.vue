@@ -214,6 +214,7 @@ export default {
                 this.loaded = true
             })
         getCategories()
+        console.log(this.$store.state.products[0].unit)
     },
 }
 </script>
