@@ -1,11 +1,11 @@
 <template>
     <div class="">
-        <h4 class="text-center text-sg-secondary mt-3">
-            You're paying ₦{{ this.$store.state.order.delivery.price + this.$store.getters.totalPrice }}
+        <h4 class="text-center text-sg-secondary mt-5">
+            You're paying ₦{{ this.$store.getters.order.delivery.price + this.$store.getters.totalPrice }}
         </h4>
         <div class="d-flex justify-content-center px-5 py-2 text-sm">
             <div class="shadow-sm p-3 rounded-20 font-1 text-sg-primary me-4">Payment by Transfer</div>
-            <div class="shadow-sm p-3 rounded-20 font-1 text-sg-gray opacity-25" @click="this.$toast.show('nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnFeature is comming soon')">Online Payment</div>
+            <div class="shadow-sm p-3 rounded-20 font-1 text-sg-gray opacity-25" @click="this.$toast.show('Feature is comming soon')">Online Payment</div>
         </div>
         <div class="d-flex flex-wrap justify-content-center px-2 p-2 font-2">
             <div class="w-50 text-start ps-5">
@@ -53,7 +53,7 @@ export default {
         return {
             image:"",
             account: {
-                name:"SOFTGREEN INC.",
+                name:process.env.VUE_APP_API_HOST,
                 number:"34467728",
                 bank:"GT Bank"
             }

@@ -14,12 +14,15 @@ export const getOrders = (formdata) => {
 }
 
 export const createOrder = (formdata) => {
-    return http.post('order', formdata, {
-        transformRequest: [(data, headers) => {
-            headers["Content-Type"] = "multipart/formdata"
-            return data
-        }]
-    })
+    return http.post('order', formdata, 
+        {
+            transformRequest: [(data, headers) => {
+                headers["content-type"] = "multipart/formdata"
+                return data
+            }]
+        }
+    )
+
     .then(() => {
 
     })

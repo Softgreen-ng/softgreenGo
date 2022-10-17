@@ -84,7 +84,7 @@
                             </div>
                         </div>
 
-                        <div class="btn btn-sg-primary d-md-none p-2 mt-4">
+                        <div class="btn btn-sg-primary d-md-none p-2 mt-4" v-if="this.$store.state.products[0]">
                             Request a New Product
                         </div>
 

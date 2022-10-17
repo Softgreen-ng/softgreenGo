@@ -43,7 +43,7 @@
 
                     <!-- MODAL -->
                     <div class="position-absolute bottom max-300 bg-white d-none rt-drpdwn shadow text-end rt-drp-ignore text-sm pt-5 pb-3 px-4 animate__animated animate__slideInDown "
-                        ref="dropdown" id="rt-dropdown" style="z-index:-1;">
+                        ref="dropdown" id="rt-dropdown" style="z-index:1000000;">
 
 
                         <!-- INSIDE THE MODAL -->

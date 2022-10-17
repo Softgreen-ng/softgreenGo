@@ -6,7 +6,7 @@
                 <div class="ms-5">
                     <img src="../../public/logo.png" class="mb-3" height="30" />
                     <br>
-                    Lekki Phase 2, Lagos
+                    Abeokuta, Ogun state
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 text-end">
@@ -15,7 +15,7 @@
                         <Icon v-for="social in socials" :key="social.name" :icon="social.icon" class="icon ms-5 " />
                     </div>
                     <b class="text-sg-secondary">
-                        Hello@SoftgreenGO.app<br>
+                        Support@SoftgreenGO.app<br>
                     </b>
                     <span class="text-gray">
                         <b>Copyright 2022</b> SoftgreenGO.app
