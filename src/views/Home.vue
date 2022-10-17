@@ -11,10 +11,18 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-8 my-auto">
                     <form class="mt-2 d-flex align-items-center p-1 px-2 bg-white mx-4"
-                        style="border-radius:20px;max-width:600px" @submit.prevent="filterProducts">
-                        <input type="text" v-model="filters.keyword"
-                            class="form-control bg-transparent shadw-none btn text-start w-100 p-2 text-l-gray border-0"
-                            style="width:100%" placeholder="Search..." />
+                        style="border-radius: 20px; max-width: 600px" @submit.prevent="filterProducts">
+                        <input type="text" v-model="filters.keyword" class="
+                form-control
+                bg-transparent
+                shadw-none
+                btn
+                text-start
+                w-100
+                p-2
+                text-dark
+                border-0
+              " style="width: 100%" placeholder="Search..." />
                         <button class="bg-transparent border-0" type="submit">
                             <icon icon="fa:search" class="mx-2 text-sg-primary my-auto" />
                         </button>
@@ -22,7 +30,6 @@
                 </div>
                 <div></div>
             </div>
-
 
             <div class="p-4 text-center">
                 <span class="text-start fs-4 font-1-bold fw-bold">
@@ -34,19 +41,34 @@
                     <div class="py-3 overflow-auto ps-5 text-start d-flex d-md-block"
                         v-if="!this.$store.state.categories[0]">
                         <div v-for="cat in ['', '', '', '']" class="" :key="cat">
-                            <div class="spinner-grow btn bg-l-gray my-md-2 small me-3 text-nowrap"
-                                style="min-width:100px">
+                            <div class="
+                  spinner-grow
+                  btn
+                  bg-l-gray
+                  my-md-2
+                  small
+                  me-3
+                  text-nowrap
+                " style="min-width: 100px">
                                 <!-- {{cat.name}} -->
                             </div>
                         </div>
                     </div>
 
-                    <div class="py-3 overflow-auto ps-5 text-start d-flex justify-content-center d-md-block">
+                    <div class="
+              py-3
+              overflow-auto
+              ps-5
+              text-start
+              d-flex
+              justify-content-center
+              d-md-block
+            ">
                         <div v-for="cat in this.$store.state.categories" class="" :key="cat.id">
                             <div class="btn bg-l-gray my-md-2 small me-3 text-nowrap"
                                 :class="filters.category_id == cat.id ? 'text-sg-primary' : ''"
                                 @click="filterByCategory(cat)">
-                                {{cat.title}}
+                                {{ cat.title }}
                             </div>
                         </div>
                     </div>
@@ -59,15 +81,15 @@
                             <div class="col-6 col-md-4 col-lg-3 col-center" v-for="product in ['', '', '', '']"
                                 :key="product">
                                 <div class="text-center mb-4 w-100">
-                                    <div class="mx-auto" style="max-width:160px;">
+                                    <div class="mx-auto" style="max-width: 160px">
                                         <div class="shadow rounded-20 p-2 bg-l-gray spinner-grow"
-                                            style="min-width:150px;height:190px;"></div>
+                                            style="min-width: 150px; height: 190px"></div>
                                         <div class="pt-3 text-start small nuinto-">
-                                            <div class="spinner-grow bg-l-gray w-100 rounded-0" style="max-height:20px">
-                                            </div>
-                                            <br>
-                                            <span class="spinner-grow bg-l-gray  w-100 rounded-0"
-                                                style="max-height:20px"></span>
+                                            <div class="spinner-grow bg-l-gray w-100 rounded-0"
+                                                style="max-height: 20px"></div>
+                                            <br />
+                                            <span class="spinner-grow bg-l-gray w-100 rounded-0"
+                                                style="max-height: 20px"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -92,10 +114,10 @@
                         <div class="h-100 p-5 my-5" v-if="!this.$store.state.products[0] && loaded">
                             <div>
                                 <icon icon="heroicons-solid:emoji-sad" class="text-sg-secondary"
-                                    style="font-size:130px" />
+                                    style="font-size: 130px" />
                             </div>
                             <div class="fs-3 text-gray">
-                                Product Search not found <br>
+                                Product Search not found <br />
                                 <div class="btn btn-sg-primary p-2 mt-4">
                                     Request a New Product
                                 </div>
@@ -135,6 +157,30 @@ export default {
         // getCategories() {
         //     getCategories()
         // },
+        throttleFunction(func, delay) {
+
+            // Previously called time of the function
+            let prev = 0;
+            return (...args) => {
+                // Current called time of the function
+                let now = new Date().getTime();
+
+                // Logging the difference between previously
+                // called and current called timings
+                console.log(now - prev, delay);
+
+                // If difference is greater than delay call
+                // the function again.
+                if (now - prev > delay) {
+                    prev = now;
+
+                    // "..." is the spread operator here
+                    // returning the function with the
+                    // array of arguments
+                    return func(...args);
+                }
+            }
+        },
         filterProducts() {
             getProducts(this.filters)
         },
@@ -158,7 +204,7 @@ export default {
             deep: true,
             handler(newFilters) {
                 console.log("Watched")
-                getProducts(newFilters)
+                this.throttleFunction(getProducts(newFilters), 1500)
             }
         }
     },
@@ -181,7 +227,6 @@ export default {
 
 .states {
     position: relative;
-
 }
 
 .states-md {
@@ -194,23 +239,23 @@ export default {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 20px
+    padding: 20px;
 }
 
 .dropdown.show:before {
     .body {
-        opacity: .2;
+        opacity: 0.2;
     }
 
     background: rgba(100, 100, 100, 0.5);
-    content: '';
+    content: "";
     z-index: 1;
 }
 
 .size {
     font-size: 4vw !important;
 
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
         font-size: 5vw !important;
     }
 }

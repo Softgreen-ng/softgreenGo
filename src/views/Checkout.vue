@@ -137,6 +137,10 @@ export default {
         .then((response) => {
             this.zones = response.data.zones
         })
+
+        const delivery = this.$store.getters.order.delivery
+        if(delivery)
+        this.delivery = delivery
     }
 }
 </script>

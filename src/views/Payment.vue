@@ -53,9 +53,9 @@ export default {
         return {
             image:"",
             account: {
-                name:process.env.VUE_APP_API_HOST,
-                number:"34467728",
-                bank:"GT Bank"
+                name:process.env.VUE_APP_BANK_NAME,
+                number:process.env.VUE_APP_BANK_NUMBER,
+                bank:process.env.VUE_APP_BANK
             }
         }
     },
@@ -73,6 +73,7 @@ export default {
             form.append('order_details', JSON.stringify(order_details))
             form.append('location', this.$store.getters.order.delivery.location)
             form.append('image', this.$refs.orderImage.files[0])
+            form.append('zone', this.$store.getters.order.delivery.zone)
 
             return form
         },
