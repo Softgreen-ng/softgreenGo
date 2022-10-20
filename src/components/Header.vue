@@ -6,17 +6,17 @@
                     <img src="../../public/logo.png" width="120" @click="this.$router.push('/')" />
                 </div>
                 <div class="d-flex align-items-center">
-                    <div class="align-items-center d-none d-md-flex"   >
+                    <div class="align-items-center d-none d-md-flex"  @click="$this.router.push('/cart')" >
                         <small class="text-sm me-3">
                             Cart
                         </small>
                         <cart-icon width="35" class="me-2 text-l-gray fs-2"></cart-icon>
                     </div>
                     
-                    <div class="align-items-center d-none d-md-flex" >
+                    <div class="align-items-center d-none d-md-flex" @click="$this.router.push('/order')" >
                         <small class="text-sm me-2 ms-1">Orders</small>
                         <icon width="25" class="me-2 text-l-gray fs-2 d-none d-md-block" icon="entypo:shopping-bag"
-                            @click="$this.router.push('/order')" />
+                            />
                     </div>
                     <div class="px-1" v-if="!this.$store.getters.auth">
                         <button class="btn text-sm py-1 text-gray me-2 px-4" @click="this.$router.push('/signup')">
@@ -35,7 +35,8 @@
                             <span class="text-sm py-1 d-none d-md-block text-gray my-auto mx-2 rt-drp-ignore pe-point">
                                 {{ user.name }}
                             </span>
-                            <icon icon="bxs:user-circle" width="35" class="rt-drp-ignore my-auto text-l-gray fs-1" />
+                            <!-- icon icon="bxs:user-circle" width="35" class="rt-drp-ignore my-auto text-l-gray fs-1" / -->
+                            <img width="35" class="rt-drp-ignore my-auto text-l-gray fs-1" src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg" />
                         </div>
                     </div>
 
