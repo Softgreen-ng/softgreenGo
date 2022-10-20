@@ -18,7 +18,7 @@
                         <div class="">
                             <span class="font-2 fs-6">
                                 Order <b>
-                                    {{ order.id }}
+                                    #{{ order.id }}
                                 </b>
                             </span>
                             <div class="rounded small text-white float-end p-1" :class="order.status">
