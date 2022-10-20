@@ -78,8 +78,10 @@ export default {
 			this.$toast.success("Product Added to Cart")
 		},
 		getProductMeasure(unit){
-			let value = unit == "kilo" : "kg" ? "g"
-			return value
+			if(unit == "kilo" )
+				return "kg"
+			if(unit == "grams" )
+				return "g"
 		}
 	}
 }
