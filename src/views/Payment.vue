@@ -29,9 +29,9 @@
             </div>
         </div>
         <form class="text-center py-3" @submit.prevent="completeOrder">
-            <span class="text-gray">
+            <div class="text-gray">
                 Upload proof of payment to complete Order
-            </span>
+            </div>
             <div v-if="image" class="px-3">
                 <img :src="image" style="height:200px" class="" />
             </div>
