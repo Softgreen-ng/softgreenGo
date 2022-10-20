@@ -16,7 +16,7 @@
 			&#x20A6;{{ product.price  }}
 		</div>
 		<div class="text-start small font-1 fs-6 fw-bold">
-			{{ product.title + " " + product.weight }} {{ getProductMeasure(product.unit) }}<br>
+			{{ product.title + " " + product.weight + "" + getProductMeasure(product.unit) }}<br>
 			<span class="small text-rt-yellow font-1 font-2">
 				{{ product.location }}
 			</span>
