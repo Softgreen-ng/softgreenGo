@@ -52,7 +52,7 @@
                             <option :value="''" disabled>Select delivery Zone</option>
                         </select>
                 <input class="btn w-75 shadow-sm mt-2 p-3 text-start" required v-model="delivery.location"
-                    placeholder="Enter Deliver location" type="" />
+                    placeholder="Enter Delivery Address" type="" />
             </div>
             <div class="text-center text-md-start pt-4">
                 <span class="small font-2">
