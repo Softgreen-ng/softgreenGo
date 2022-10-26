@@ -48,12 +48,17 @@
 
 <script>
 import { getOrders } from "@/services/order"
+import Widget from "@/functions/widget"
 
 export default {
     name: '',
     components: {},
     created() {
+        Widget.openLoading()
         getOrders()
+        .then(() => {
+            Widget.dismiss()
+        })
     }
 }
 </script>

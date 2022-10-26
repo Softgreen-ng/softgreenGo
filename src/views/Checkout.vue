@@ -86,6 +86,7 @@
 
 <script>
 import { getZones } from "@/services/product"
+import Widget from "@/functions/widget"
 
 export default {
     name: "CheckOut",
@@ -140,9 +141,11 @@ export default {
         }
     },
     created() {
+        Widget.openLoading()
         getZones()
             .then((response) => {
                 this.zones = response.data.zones
+                Widget.dismiss()
             })
 
         if (Object.keys(this.$store.getters.order) > 1) {
