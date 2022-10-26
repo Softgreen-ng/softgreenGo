@@ -46,7 +46,7 @@ export default createStore({
       return localStorage.getItem("token")
     },
     order(){
-      return JSON.parse(localStorage.getItem("order"))
+      return JSON.parse(localStorage.getItem("order")) ?? {}
     },
     totalPrice(state){
       let sum = 0

@@ -33,6 +33,7 @@ import '@/themes/styles.less'
 import '@/themes/fonts.css'
 import 'v-calendar/dist/style.css'
 import 'vue-loading-overlay/dist/vue-loading.css';
+import './registerServiceWorker'
 
 
 createApp(App).

@@ -12,7 +12,7 @@
                     <div class="d-flex align-items-center justify-content-center w-100">
                         <icon icon="fluent:select-all-on-24-regular" class="text-sg-primary font-2 fs-1" />
                         <span class="text-gray fs-3 ms-1">
-                            {{ Object.entries(this.$store.state.cart).length}}
+                            {{ Object.entries(this.$store.state.cart).length }}
                         </span>
                     </div>
                     <div class="font-1 small text-sm">
@@ -46,24 +46,29 @@
                 Delivery Details
             </h6>
             <div class="row justify-content-center">
-                        <select v-model="delivery.zone" placeholder="Select"
-                            class="btn w-75 required mb-2 bg-white text-start form-control font-1 shadow-sm py-3 px-4 mx-300" required="true">
-                            <option v-for="zone in zones" :key="zone.id" :value="zone.name">{{ zone.name }}</option>
-                            <option :value="''" disabled>Select delivery Zone</option>
-                        </select>
+                <select v-model="delivery.zone" placeholder="Select"
+                    class="btn w-75 required mb-2 bg-white text-start form-control font-1 shadow-sm py-3 px-4 mx-300"
+                    required="true">
+                    <option v-for="zone in zones" :key="zone.id" :value="zone.name">{{ zone.name }}</option>
+                    <option :value="''" disabled>Select delivery Zone</option>
+                </select>
                 <input class="btn w-75 shadow-sm mt-2 p-3 text-start" required v-model="delivery.location"
                     placeholder="Enter Delivery Address" type="" />
             </div>
             <div class="text-center text-md-start pt-4">
                 <span class="small font-2">
                     <v-calendar :available-dates='getNextDate' :attributes="[{
-                            bar: 'green',  // Boolean, String, Object
-                            dates: this.getNextDate.start,
-                            content:'green'
-
-                    }]" class="border-0" is-expanded nav-visibility="hidden"></v-calendar>
+                        bar: 'green',  // Boolean, String, Object
+                        dates: this.getNextDate.start,
+                        content: 'green'
+                    
+                    }]" 
+                    class="border-0 font-2" 
+                    is-expanded 
+                    nav-visibility="">
+                </v-calendar>
                     <small class="font-2">
-                        Next Delivery Date takes place on 
+                        Next Delivery Date takes place on
                         <b>
                             {{ new Date(this.getNextDate.start).toDateString() }}
                         </b>
@@ -87,24 +92,26 @@ export default {
     data() {
         return {
             delivery: {
-                price:0,
-                zone:""
+                price: 0,
+                zone: ""
             },
-            zones:[]
+            zones: []
         }
     },
     computed: {
-        getNextDate(){
+        getNextDate() {
             let day = new Date().getDate()
+            day = day % 7
+            console.log("day", day)
             let date
-            if( day > 6 || day < 2){
+            if (day > 6 || day < 2) {
                 date = this.getNextTuesday()
             }
             else {
                 date = this.getNextSaturday()
             }
             let nextDate = {
-                start:date,
+                start: date,
                 end: date
             }
             return nextDate
@@ -114,31 +121,31 @@ export default {
         proceedToPayment() {
             this.$store.commit('updateLocalObject', {
                 name: "order",
-                value: { delivery:this.delivery }
+                value: { delivery: this.delivery }
             })
             this.$router.push('/payment')
         },
-        getNextTuesday(){
+        getNextTuesday() {
             return new Date().setDate(new Date().getDate() + ((7 - new Date().getDay()) % 7 + 2) % 7);
         },
-        getNextSaturday(){
+        getNextSaturday() {
             return new Date().setDate(new Date().getDate() + ((7 - new Date().getDay()) % 7 + 6) % 7);
         },
     },
     watch: {
         'delivery.zone': {
-            handler(zone){
+            handler(zone) {
                 this.delivery.price = this.$store.state.zones.filter((e) => e.name == zone)[0].price
             }
         }
     },
-    created(){
+    created() {
         getZones()
-        .then((response) => {
-            this.zones = response.data.zones
-        })
+            .then((response) => {
+                this.zones = response.data.zones
+            })
 
-        if(this.$store.getters.order){
+        if (Object.keys(this.$store.getters.order) > 1) {
             const delivery = this.$store.getters.order.delivery
             this.delivery = delivery
         }
