@@ -4,9 +4,7 @@
             <div class="row p-3 px-1 px-sm-3 bg-l-gray align-items-center">
                 <div class="col-12 col-sm-12 col-md-4">
                     <div class="px-md-0 pr-5 me-5 text-start my-auto">
-                        <button class="btn btn-sg-primary px-4 d-none d-md-block" @click="this.$router.push('/rent')">
-                            Request new Product
-                        </button>
+                        <request-button class="d-none d-md-block"></request-button>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-8 my-auto">
@@ -106,8 +104,8 @@
                             </div>
                         </div>
 
-                        <div class="btn btn-sg-primary d-md-none p-2 mt-4" v-if="this.$store.state.products[0]">
-                            Request a New Product
+                        <div class="d-md-none p-2 mt-4" v-if="this.$store.state.products[0]">
+                            <request-button></request-button>
                         </div>
 
                         <!-- No Product Found -->
@@ -118,9 +116,7 @@
                             </div>
                             <div class="fs-3 text-gray">
                                 Product Search not found <br />
-                                <div class="btn btn-sg-primary p-2 mt-4">
-                                    Request a New Product
-                                </div>
+                                <request-button></request-button>
                             </div>
                         </div>
                     </div>
@@ -133,12 +129,15 @@
 <script>
 // @ is an alias to /src
 import Product from '@/components/Product'
+import RequestButton from '@/components/RequestButton'
 import { getProducts, getCategories } from "@/services/product"
+import Widget from "@/functions/widget"
 
 export default {
     name: 'Home',
     components: {
         Product,
+        RequestButton,
     },
     data() {
         return {
@@ -182,7 +181,9 @@ export default {
             }
         },
         filterProducts() {
+            Widget.openLoading()
             getProducts(this.filters)
+            Widget.dismiss()
         },
         removeCat(cat) {
             if (this.filters.category_id == cat.id) {
@@ -200,11 +201,13 @@ export default {
         }
     },
     watch: {
-        filters: {
+        'filters.category_id': {
             deep: true,
             handler(newFilters) {
+                Widget.openLoading()
                 console.log("Watched")
                 this.throttleFunction(getProducts(newFilters), 1500)
+                Widget.dismiss()
             }
         }
     },
@@ -214,7 +217,7 @@ export default {
                 this.loaded = true
             })
         getCategories()
-        console.log(this.$store.state.products[0].unit)
+        // console.log(this.$s66666666666666666666666666666666666666666tore.state.products[0].unit)
     },
 }
 </script>

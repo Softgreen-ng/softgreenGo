@@ -123,7 +123,16 @@ const routes = [
     component: () => import('@/views/Order.vue'),
     beforeEnter: redirectIfNotAuthenticated
   },
-
+  {
+    path: '/request',
+    name: 'Request',
+    component: () => import('@/views/Request.vue')
+  },
+  {
+    path: '/request/success',
+    name: 'RequestSuccess',
+    component: () => import('@/views/success/Request.vue')
+  },
   {
     path: '/terms',
     name: 'Terms',

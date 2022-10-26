@@ -138,9 +138,10 @@ export default {
             this.zones = response.data.zones
         })
 
-        const delivery = this.$store.getters.order.delivery
-        if(delivery)
-        this.delivery = delivery
+        if(this.$store.getters.order){
+            const delivery = this.$store.getters.order.delivery
+            this.delivery = delivery
+        }
     }
 }
 </script>

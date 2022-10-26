@@ -40,3 +40,10 @@ export const getCategories = (formdata) => {
         return response;
     })
 }
+
+export const requestProduct = (formdata) => {
+    return http.post('request', {...formdata})
+    .then((response) => {
+        return response
+    })
+}
