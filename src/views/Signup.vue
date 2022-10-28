@@ -44,7 +44,7 @@
                             Whatsapp Number
                         </label>
                         <input v-model="user.phone.whatsapp" type="tel" inputmode="numeric" minlength="11" maxlength="13"
-                            class="btn bg-white text-start form-control font-1 shadow py-3 px-4" required="true" />
+                            class="btn bg-white text-start form-control font-1 shadow py-3 px-4" />
                     </div>
 
                     <div class="mt-3 mb-2 form-input">
