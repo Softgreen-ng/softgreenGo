@@ -6,14 +6,14 @@
                     <img src="../../public/logo.png" width="120" @click="this.$router.push('/')" />
                 </div>
                 <div class="d-flex align-items-center">
-                    <div class="align-items-center d-none d-md-flex"  @click="$this.router.push('/cart')" >
+                    <div class="align-items-center d-none d-md-flex"  @click="this.$router.push('/cart')" >
                         <small class="text-sm me-3">
                             Cart
                         </small>
                         <cart-icon width="35" class="me-2 text-l-gray fs-2"></cart-icon>
                     </div>
                     
-                    <div class="align-items-center d-none d-md-flex" @click="$this.router.push('/order')" >
+                    <div class="align-items-center d-none d-md-flex" @click="this.$router.push('/order')" >
                         <small class="text-sm me-2 ms-1">Orders</small>
                         <icon width="25" class="me-2 text-l-gray fs-2 d-none d-md-block" icon="entypo:shopping-bag"
                             />
