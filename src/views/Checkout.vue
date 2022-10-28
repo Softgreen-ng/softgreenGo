@@ -101,8 +101,8 @@ export default {
     },
     computed: {
         getNextDate() {
-            let day = new Date().getDate()
-            day = day % 7
+            let day = new Date().getDay()
+            //day = day % 7
             console.log("day", day)
             let date
             if (day > 6 || day < 2) {
