@@ -146,33 +146,36 @@ export default {
             modal: {
                 isVisible: false,
                 product: {}
-            }
+            },
+            prev:0
         }
     },
     methods: {
-        // getProducts() {
-        //     getProducts()
-        // },
+        getProducts(filter) {
+            Widget.openLoading()
+            getProducts(filter)
+            .then(() => {
+                Widget.dismiss()
+            })
+        },
         // getCategories() {
         //     getCategories()
         // },
         throttleFunction(func, delay) {
 
             // Previously called time of the function
-            let prev = 0;
             return (...args) => {
                 // Current called time of the function
                 let now = new Date().getTime();
 
                 // Logging the difference between previously
                 // called and current called timings
-                console.log(now - prev, delay);
+                // console.log(now - prev, delay);
 
                 // If difference is greater than delay call
                 // the function again.
-                if (now - prev > delay) {
-                    prev = now;
-
+                if (now - this.prev > delay) {
+                    this.prev = now;
                     // "..." is the spread operator here
                     // returning the function with the
                     // array of arguments
@@ -181,9 +184,7 @@ export default {
             }
         },
         filterProducts() {
-            Widget.openLoading()
-            getProducts(this.filters)
-            Widget.dismiss()
+            this.getProducts(this.filters)
         },
         removeCat(cat) {
             if (this.filters.category_id == cat.id) {
@@ -198,18 +199,16 @@ export default {
                 return;
             }
             this.filters.category_id = cat.id
+            this.throttleFunction(this.getProducts(this.filters), 500000)
         }
     },
     watch: {
-        'filters.category_id': {
-            deep: true,
-            handler(newFilters) {
-                Widget.openLoading()
-                console.log("Watched")
-                this.throttleFunction(getProducts(newFilters), 1500)
-                Widget.dismiss()
-            }
-        }
+        // 'filters': {
+        //     deep: true,
+        //     handler(newFilters) {
+        //         console.log("Watched")
+        //     }
+        // }
     },
     created() {
         getProducts()

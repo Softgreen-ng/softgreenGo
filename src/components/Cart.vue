@@ -81,4 +81,7 @@ export default {
         padding-bottom: 70px !important;
         padding-top: 70px !important
     }
+    .p-inputwrapper{
+        width:34px;
+    }
     </style>

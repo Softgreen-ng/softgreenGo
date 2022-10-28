@@ -38,7 +38,7 @@
                     <form class="row text-start" @submit.prevent="AddtoCart" v-else>
                         <div class="col-12 _col-sm-6 col-md-12">
                             <div class="px-2 w-50">
-                                <InputNumber :min="1" inputId="vertical" style="max-width:20px !important" v-model="quantity" required mode="decimal" showButtons
+                                <InputNumber :min="1" inputId="vertical" style="" v-model="quantity" required mode="decimal" showButtons
                                     buttonLayout="horizontal" class="small-inp border-0 w-100"
                                     decrementButtonClass="square p-button-text text-white  btn-sg-secondary rounded-circle"
                                     incrementButtonClass="square p-button-success  rounded-circle"
