@@ -46,6 +46,7 @@
 <script>
 import { createOrder } from "@/services/order"
 import Widget from "@/functions/widget"
+import { getNextDate } from "@/functions/date"
 
 export default {
     name:"Payment",
@@ -69,12 +70,14 @@ export default {
             var order_details = {
                     products: this.$store.state.cart
             }
+            var d_date = getNextDate().start
+            console.log(d_date)
 
             form.append('order_details', JSON.stringify(order_details))
             form.append('location', this.$store.getters.order.delivery.location)
             form.append('image', this.$refs.orderImage.files[0])
             form.append('zone', this.$store.getters.order.delivery.zone)
-
+            form.append('delivery_date', new Date(d_date).toISOString())
             return form
         },
         completeOrder() {
@@ -84,7 +87,7 @@ export default {
             createOrder(formdata)
             .then((response)=> {
                 if(response.data.status){
-                    this.$store.commit('update', {
+                    this.$store.commit('updateLocalObject', {
                         name:"cart",
                         value: {}
                     })
@@ -101,6 +104,11 @@ export default {
             navigator.clipboard.writeText(this.account.number);
             this.$toast.show("Account number copied !")
         }   
+    },
+    created(){
+        if(!this.$store.getters.order.delivery)  {
+            this.$router.push('/')
+        }
     }
 }
 </script>

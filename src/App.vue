@@ -1,33 +1,36 @@
 <template>
-<div class="position-relative header-padding" style="">
-<confirm-dialog></confirm-dialog>
-<app-header class="w-100 " style="" />
-  <div class="">
-    <router-view v-slot="{ Component }">
-      <transition name="slide" >
-        <component :is="Component" />
-      </transition>
-    </router-view>
+  <div class="position-relative header-padding" style="min-height:100vh !important">
+    <confirm-dialog></confirm-dialog>
+    <app-header class="w-100 " style="" />
+    <div class="h-100" style="">
+      <router-view v-slot="{ Component }">
+        <transition name="slide">
+          <component :is="Component" />
+        </transition>
+      </router-view>
+    </div>
+    <support-chat ></support-chat>
+    <app-footer class="w-100 mt-5" />
   </div>
-<app-footer class="w-100 mt-5" />
-</div>
 </template>
 
 <script >
 import ConfirmDialog from 'primevue/confirmdialog';
 import { getProfile } from './services/user';
+import SupportChat from './components/SupportChat.vue';
 
-  export default {
-    name:'',
-    components: {
-      ConfirmDialog
-    },
-    created(){
-      if(this.$store.getters.auth){
-        getProfile()
-      }
+export default {
+  name: '',
+  components: {
+    ConfirmDialog,
+    SupportChat
+  },
+  created() {
+    if (this.$store.getters.auth) {
+      getProfile()
     }
   }
+}
 </script>
 
 <style lang="less">
@@ -38,9 +41,11 @@ import { getProfile } from './services/user';
   text-align: center;
   color: #2c3e50;
 }
+
 .bg-secondary {
-    --bs-bg-opacity: .5 !important;
+  --bs-bg-opacity: .5 !important;
 }
+
 #nav {
   padding: 30px;
 
@@ -53,10 +58,12 @@ import { getProfile } from './services/user';
     }
   }
 }
-.header-padding{
-  padding-top:60px;
+
+.header-padding {
+  padding-top: 60px;
+
   @media(min-width:768px) {
-    padding-top:75px;
+    padding-top: 75px;
   }
 }
 </style>

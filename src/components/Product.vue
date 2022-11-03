@@ -64,7 +64,7 @@ export default {
 				isVisible: false,
 				product: {},
 			},
-			quantity: 0
+			quantity: 1
 
 		}
 	},

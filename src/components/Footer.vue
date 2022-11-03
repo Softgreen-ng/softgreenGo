@@ -15,10 +15,10 @@
                         <Icon v-for="social in socials" :key="social.name" :icon="social.icon" class="icon ms-5 " />
                     </div>
                     <b class="text-sg-secondary">
-                        Support@SoftgreenGO.app<br>
+                        support@softgreen.ng<br>
                     </b>
                     <span class="text-gray">
-                        <b>Copyright 2022</b> SoftgreenGO.app
+                        <b>Copyright 2022</b> SoftgreenGO
                     </span>
                 </div>
             </div>
@@ -90,5 +90,9 @@ export default {
     .bottom {
         padding-bottom: 50px !important;
     }
+}
+.rounded-circle {
+    width:40px;
+    height:40px;
 }
 </style>

@@ -8,6 +8,9 @@ import VueLoading from 'vue-loading-overlay';
 
 import PrimeVue from 'primevue/config';
 import ConfirmationService from 'primevue/confirmationservice';
+import Tooltip from 'primevue/tooltip';
+
+
 import "primevue/resources/primevue.min.css"           //core css
 import "primeicons/primeicons.css"
 import "primevue/resources/themes/lara-light-blue/theme.css"
@@ -36,12 +39,13 @@ import 'vue-loading-overlay/dist/vue-loading.css';
 import './registerServiceWorker'
 
 
-createApp(App).
-use(store)
+createApp(App)
+.directive('tooltip', Tooltip)
+.use(store)
 .use(router)
 .use(VCalendar)
 .use(VueLoading)
-.use(PrimeVue)
+.use(PrimeVue,  {ripple: true})
 .use(ConfirmationService)
 .use(Toaster, {
     position: "top",

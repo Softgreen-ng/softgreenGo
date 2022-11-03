@@ -86,6 +86,7 @@
 
 <script>
 import { getZones } from "@/services/product"
+import { getNextDate } from "@/functions/date"
 // import Widget from "@/functions/widget"
 
 export default {
@@ -101,21 +102,7 @@ export default {
     },
     computed: {
         getNextDate() {
-            let day = new Date().getDate()
-            day = day % 7
-            console.log("day", day)
-            let date
-            if (day > 6 || day < 2) {
-                date = this.getNextTuesday()
-            }
-            else {
-                date = this.getNextSaturday()
-            }
-            let nextDate = {
-                start: date,
-                end: date
-            }
-            return nextDate
+            return getNextDate()
         }
     },
     methods: {
@@ -125,12 +112,6 @@ export default {
                 value: { delivery: this.delivery }
             })
             this.$router.push('/payment')
-        },
-        getNextTuesday() {
-            return new Date().setDate(new Date().getDate() + ((7 - new Date().getDay()) % 7 + 2) % 7);
-        },
-        getNextSaturday() {
-            return new Date().setDate(new Date().getDate() + ((7 - new Date().getDay()) % 7 + 6) % 7);
         },
     },
     watch: {

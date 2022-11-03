@@ -29,11 +29,11 @@
                 <div></div>
             </div>
 
-            <div class="p-4 text-center">
+            <!-- <div class="p-4 text-center">
                 <span class="text-start fs-4 font-1-bold fw-bold">
                     Recent products
                 </span>
-            </div>
+            </div> -->
             <div class="row py-md-3">
                 <div class="col-12 col-md-3">
                     <div class="py-3 overflow-auto ps-5 text-start d-flex d-md-block"
