@@ -4,6 +4,12 @@ import ErrorPage from '@/views/ErrorPage'
 import store from "../store"
 import { createToaster } from "@meforma/vue-toaster";
 
+var toast = createToaster({
+  position: "top",
+  maxToasts: 1,
+  opacity: .8
+}
+)
 const redirectIfAuthenticated = () => {
   if(store.getters.auth){
     createToaster({}).show(`User needs to be authenticated`);
@@ -16,6 +22,7 @@ const redirectIfAuthenticated = () => {
 
 const redirectIfNotAuthenticated = () => {
   if(!store.getters.auth){
+    toast.show("User needs to be authenticated")
     return {
       path:"/login"
     }
