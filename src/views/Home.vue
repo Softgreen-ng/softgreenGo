@@ -29,11 +29,11 @@
                 <div></div>
             </div>
 
-            <!-- <div class="p-4 text-center">
+            <div class="p-4 text-center">
                 <span class="text-start fs-4 font-1-bold fw-bold">
                     Recent products
                 </span>
-            </div> -->
+            </div>
             <div class="row py-md-3">
                 <div class="col-12 col-md-3">
                     <div class="py-3 overflow-auto ps-5 text-start d-flex d-md-block"
@@ -114,9 +114,9 @@
                                 <icon icon="heroicons-solid:emoji-sad" class="text-sg-secondary"
                                     style="font-size: 130px" />
                             </div>
-                            <div class="fs-3 text-gray">
+                            <div class="fs-4 text-gray">
                                 Product Search not found <br />
-                                <request-button></request-button>
+                                <request-button class="mt-2"></request-button>
                             </div>
                         </div>
                     </div>
@@ -195,6 +195,7 @@ export default {
         filterByCategory(cat) {
             if (this.filters.category_id == cat.id) {
                 this.filters.category_id = null
+                this.getProducts()
                 delete (this.filters.category_id)
                 return;
             }

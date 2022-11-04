@@ -1,5 +1,6 @@
 <template>
   <div class="position-relative header-padding" style="min-height:100vh !important">
+    <support-chat ></support-chat>
     <confirm-dialog></confirm-dialog>
     <app-header class="w-100 " style="" />
     <div class="h-100" style="">
@@ -9,7 +10,6 @@
         </transition>
       </router-view>
     </div>
-    <support-chat ></support-chat>
     <app-footer class="w-100 mt-5" />
   </div>
 </template>
