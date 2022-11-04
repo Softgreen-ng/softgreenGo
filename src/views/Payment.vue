@@ -77,7 +77,7 @@ export default {
             form.append('location', this.$store.getters.order.delivery.location)
             form.append('image', this.$refs.orderImage.files[0])
             form.append('zone', this.$store.getters.order.delivery.zone)
-            form.append('delivery_date', new Date(d_date).toISOString())
+            form.append('delivery_date', parseInt(d_date/1000))
             return form
         },
         completeOrder() {
