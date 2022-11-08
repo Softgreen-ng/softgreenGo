@@ -20,9 +20,9 @@
                             <review-star review="2" class="small" />
                         </div>
                         <div class="mt-2">
-                            <div class="text-gray my-auto font-2 pe-2 text-wrap">
-                                {{ product.content }}
-                            </div>
+                            <p class="text-gray my-auto font-2 pe-2 text-wrap">
+                                <span v-html="product.content"></span>
+                            </p>
                         </div>
 
                     </div>

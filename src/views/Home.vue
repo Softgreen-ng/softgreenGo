@@ -31,7 +31,7 @@
 
             <div class="p-4 text-center">
                 <span class="text-start fs-4 font-1-bold fw-bold">
-                    Recent products
+                    Our products
                 </span>
             </div>
             <div class="row py-md-3">
@@ -59,7 +59,8 @@
               ps-5
               text-start
               d-flex
-              justify-content-center
+              justify-content-start
+              justify-content-md-center
               d-md-block
             ">
                         <div v-for="cat in this.$store.state.categories" class="" :key="cat.id">

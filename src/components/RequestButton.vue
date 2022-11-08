@@ -1,5 +1,5 @@
 <template>
-  <button class="btn btn-sg-primary px-2" @click="this.$router.push('/request')">Request a New Product</button>
+  <button style="z-index:10000;" class="btn btn-sg-primary px-2" @click="this.$router.push('/request')">Request a New Product</button>
 </template>
 
 <script>

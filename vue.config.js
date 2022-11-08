@@ -15,7 +15,7 @@ module.exports = {
         {
           src: "img/icons/favicon-32x32.png",
           sizes: "512x512",
-          type: "image/svg+xml",
+          // type: "image/svg+xml",
           purpose: "any maskable",
         }, , ,
       ],
