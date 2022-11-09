@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 
 import { register } from 'register-service-worker'
+import { Widget } from "@/functions/widget"
 
 if (process.env.NODE_ENV === 'production') {
   register(`${process.env.BASE_URL}service-worker.js`, {
@@ -21,8 +22,10 @@ if (process.env.NODE_ENV === 'production') {
     },
     updated () {
       console.log('New content is available; please refresh.')
+      window.location.reload()
     },
     offline () {
+      Widget.toast("No Internet Connection")
       console.log('No internet connection found. App is running in offline mode.')
     },
     error (error) {

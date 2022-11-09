@@ -1,14 +1,12 @@
 <template>
     <div class="d-flex flex-wrap justify-content-center bg-body p-3 mx-3 " style="min-height:h !important;">
         <div class="p-3 p-md-4 bg-white bg-mobile my-5 mx-auto text-center rounded-20" style="">
-            <img src="../../public/kit/icons/icon.png" style="width:10%" class="" />
-            <br>
             <div class="text-sg-secondary w-1 mt-2">
-                <p class="h4 font-1-bold">
-                    SignUp
-                </p>
+                <b class="h4 font-1-bold">
+                    Edit Profile
+                </b>
             </div>
-            <form @submit.prevent="signup" class="mt-3 px-2 px-md-2 mx-auto w-100" _style="max-width:300px">
+            <form @submit.prevent="update" class="mt-3 px-2 px-md-2 mx-auto w-100" _style="max-width:300px">
                 <div class="d-flex flex-wrap justify-content-around w-100">
                     <div class="mt-3 mb-2 form-input">
                         <label class="my-2">
@@ -24,7 +22,6 @@
                         </label>
                         <select v-model="user.title" placeholder="IamSoftgreen@email.com" type="email"
                             class="btn bg-white text-start form-control font-1 shadow py-3 px-4" required="true">
-                            <option value="" disabled>Select Desired title</option>
                             <option value="MR.">MR.</option>
                             <option value="Miss">Miss.</option>
                             <option value="Mrs.">MRs.</option>
@@ -37,7 +34,6 @@
                         </label>
                         <input v-model="user.name" placeholder="Jhon Doe" type="text"
                             class="btn bg-white text-start form-control font-1 shadow py-3 px-4" required="true" />
-                        <small>Firstname before Surname</small>
                     </div>
 
                     <div class="mt-3 mb-2 form-input">
@@ -51,38 +47,16 @@
                     <div class="mt-3 mb-2 form-input">
                         <label class="my-2">
                             Contact Number
-                            <span class="text-danger">
-                                (if different from Whatsapp)
-                            </span>
                         </label>
                         <input v-model="user.phone.contact" type="tel" inputmode="numeric" minlength="11" maxlength="13"
                             class="btn bg-white text-start form-control font-1 shadow py-3 px-4"/>
                     </div>
-
-                    <div class="mt-3 mb-2 form-input">
-                        <label class="my-2">
-                            Password
-                        </label>
-                        <div type="text" class="btn text-start p-0 d-flex font-1 shadow bg-white">
-                            <input v-model="user.password" placeholder="*******" :type="passType"
-                                class="btn text-start form-control w-100 border-0 py-3 px-4 " required="true"
-                                @keyup="confirmPasswordCombination" />
-                            <icon icon="ph:eye" width="25" class="my-auto me-3" v-if="passType == 'text'"
-                                @click="this.passType = 'password'" />
-                            <icon icon="ph:eye-closed-fill" width="25" class="my-auto me-3" v-else
-                                @click="this.passType = 'text'" />
-                        </div>
-                    </div>
                 </div>
 
-                <div class="text-sm-sm mt-2 font-1-s-bold text-center">
-                    By clicking <span class="text-sg-primary font-1-bold">continue</span> you’re accepting to our terms
-                    and privacy policies
-                </div>
-                <button type="submit"
+                <button type="update"
                     class="btn btn-sg-secondary text-sg-primary ms-2 mt-4 mb-2 p-2 px-5 font-1 fw-bold ">
                     <span class="h6 text-white">
-                        Continue
+                        Update
                     </span>
                 </button>
             </form>
@@ -92,14 +66,13 @@
 
 <script>
 import Widget from "@/functions/widget"
-import { signup } from "@/services/auth"
+import { updateProfile, getProfile } from "@/services/user"
 
 export default {
     name: '',
     components: {},
     data() {
         return {
-            passType: 'text',
             user: {
                 phone: {
                     whatsapp:"",
@@ -110,25 +83,28 @@ export default {
         }
     },
     methods: {
-        signup() {
+        update() {
             Widget.openLoading()
-            signup(this.user)
-            .then((response) => {
-                if(response.data.errors === false){
-                   location.href = this.$route.params.continue ?? "/"
-                }
-                else{
-                    let k = Object.keys(response.data)
-                    let error = response.data[k][0]
-                    console.log(error)
-                    this.$toast.show(error)
-                }
+            updateProfile(this.user, this.user.id)
+            .then((data) => {
                 Widget.dismiss()
+                if(data.status){
+                    this.$toast.success("Profile succesfully updated")
+                    this.$router.push("/profile")
+                    return
+                }
+                this.$toast.error("User could not be updated")
             })
         }
 
     },
-    created() {
+    async created() {
+        getProfile()
+        .then(() => {
+            this.user = this.$store.state.user
+            console.log(this.$store.state.user)
+        })
+        this.user = this.$store.state.user
     }
 }
 </script>

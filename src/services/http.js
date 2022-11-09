@@ -44,6 +44,13 @@ http.interceptors.request.use((request) => {
 
 http.interceptors.response.use((response) => {
     // console.log("Response recieved", response);
+    if(response.data.errrors){
+        if(response.data.token_expired){
+            localStorage.removeItem("token")
+            toast.error("Session expired", "error")
+            location.href = '/login'
+        }
+    }
     return response;
 },
     (error => {

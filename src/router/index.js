@@ -11,20 +11,20 @@ var toast = createToaster({
 }
 )
 const redirectIfAuthenticated = () => {
-  if(store.getters.auth){
+  if (store.getters.auth) {
     createToaster({}).show(`User needs to be authenticated`);
     return {
-      path:"/"
+      path: "/"
     }
   }
 }
 
 
 const redirectIfNotAuthenticated = () => {
-  if(!store.getters.auth){
+  if (!store.getters.auth) {
     toast.show("User needs to be authenticated")
     return {
-      path:"/login"
+      path: "/login"
     }
   }
 }
@@ -128,6 +128,18 @@ const routes = [
     path: '/order',
     name: 'Order',
     component: () => import('@/views/Order.vue'),
+    beforeEnter: redirectIfNotAuthenticated
+  },
+  {
+    path: '/profile/edit',
+    name: 'EditProflie',
+    component: () => import('@/views/EditProfile.vue'),
+    beforeEnter: redirectIfNotAuthenticated
+  },
+  {
+    path: '/profile',
+    name: 'Proflie',
+    component: () => import('@/views/Profile.vue'),
     beforeEnter: redirectIfNotAuthenticated
   },
   {
