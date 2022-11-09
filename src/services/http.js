@@ -44,26 +44,27 @@ http.interceptors.request.use((request) => {
 
 http.interceptors.response.use((response) => {
     // console.log("Response recieved", response);
-    if(response.data.errrors){
-        if(response.data.token_expired){
-            localStorage.removeItem("token")
-            toast.error("Session expired", "error")
-            location.href = '/login'
-        }
-    }
+
     return response;
 },
     (error => {
-        try{ 
+        try {
             Widget.dismiss()
         }
-        catch(e){
+        catch (e) {
             console.log(e.message)
         }
-        
-        // console.log("Response Error", error);
+
+        console.log("Response Error", error);
         if (error.response) {
-            // console.log("Error, Request was made though", error)
+            if (error.response.data.errors) {
+                if (error.response.data.token_invalid || error.response.data.token_expired) {
+                    toast.error("Session expired", "error")
+                    localStorage.removeItem("token")
+                    location.href = '/login'
+                }
+            }
+            console.log("Error, Request was made though", error)
             // toast.show('unknown error occured');
         }
         else if (error.request) {

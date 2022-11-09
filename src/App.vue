@@ -1,6 +1,6 @@
 <template>
   <div class="position-relative header-padding" style="min-height:100vh !important">
-    <support-chat ></support-chat>
+    <support-chat></support-chat>
     <confirm-dialog></confirm-dialog>
     <app-header class="w-100 " style="" />
     <div class="h-100" style="">
@@ -28,6 +28,16 @@ export default {
   created() {
     if (this.$store.getters.auth) {
       getProfile()
+        // .then((response) => {
+          // console.log(response)
+          // if (response.errors) {
+          //   if (response.token_expired) {
+          //     localStorage.removeItem("token")
+          //     this.$toast.error("Session expired", "error")
+          //     this.$router.push("/login")
+          //   }
+          // }
+        // })
     }
   }
 }

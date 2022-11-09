@@ -117,6 +117,7 @@ export default {
     },
     data() {
         return {
+            user:{},
             isPasswordToChange: false
         }
     },
