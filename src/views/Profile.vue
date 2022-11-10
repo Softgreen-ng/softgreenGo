@@ -62,7 +62,7 @@
             </div>
         </div>
         <Dialog v-model:visible="isPasswordToChange">
-            <form @submit.prevent="signup" class="mt-3 px-2 px-md-2 mx-auto w-100" _style="max-width:300px">
+            <form @submit.prevent="changePassword" class="mt-3 px-2 px-md-2 mx-auto w-100 text-center" _style="max-width:300px">
                 <div class="mt-3 mb-2 form-input">
                     <label class="my-2">
                         Old Password
@@ -78,7 +78,7 @@
                 </div>
                 <div class="mt-3 mb-2 form-input">
                     <label class="my-2">
-                        Old Password
+                        New Password
                     </label>
                     <div type="text" class="btn text-start p-0 d-flex font-1 shadow bg-white">
                         <input v-model="user.password" placeholder="*******" :type="passType"
@@ -91,10 +91,10 @@
                 </div>
                 <div class="mt-3 mb-2 form-input">
                     <label class="my-2">
-                        Old Password Confirmation
+                        New Password Confirmation
                     </label>
                     <input v-model="user.password" placeholder="*******" :type="passType"
-                        class="btn text-start form-control w-100 border-0 py-3 px-4 " required="true" />
+                        class="btn text-start shadow form-control w-100 border-0 py-3 px-4 " required="true" />
                 </div>
                 <button type="submit"
                     class="btn btn-sg-secondary text-sg-primary ms-2 mt-4 mb-2 p-2 px-5 font-1 fw-bold ">
@@ -130,5 +130,7 @@ export default {
 </script>
 
 <style scoped>
-
+label {
+    font-size:12px;
+}
 </style>

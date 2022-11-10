@@ -59,7 +59,7 @@ http.interceptors.response.use((response) => {
         if (error.response) {
             if (error.response.data.errors) {
                 if (error.response.data.token_invalid || error.response.data.token_expired) {
-                    toast.error("Session expired", "error")
+                    toast.error("Session expired")
                     localStorage.removeItem("token")
                     location.href = '/login'
                 }
