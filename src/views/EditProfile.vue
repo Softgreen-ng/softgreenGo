@@ -12,8 +12,11 @@
                         <label class="my-2">
                             Email
                         </label>
-                        <input v-model="user.email" placeholder="IamSoftgreen@email.com" type="email"
+                        <input v-model="user.email" disabled placeholder="IamSoftgreen@email.com" type="email"
                             class="btn bg-white text-start form-control font-1 shadow py-3 px-4" required="true" />
+                            <p class="text-sm py-1 text-gray small">
+                                Email cannot be changed at the moment
+                            </p>
                     </div>
 
                     <div class="mt-3 mb-2 form-input">
@@ -85,26 +88,34 @@ export default {
     methods: {
         update() {
             Widget.openLoading()
-            updateProfile(this.user, this.user.id)
+            updateProfile( this.user.id, this.user)
             .then((data) => {
                 Widget.dismiss()
-                if(data.status){
+                if(data.success){
                     this.$toast.success("Profile succesfully updated")
                     this.$router.push("/profile")
                     return
                 }
                 this.$toast.error("User could not be updated")
             })
+        },
+        storeUser(){
+            this.user.id = this.$store.state.user.id
+            this.user.name = this.$store.state.user.name
+            this.user.title = this.$store.state.user.title
+            this.user.phone.whatsapp = this.$store.state.user.phone.whatsapp
+            this.user.phone.contact = this.$store.state.user.phone.contact
+
         }
 
     },
     async created() {
         getProfile()
         .then(() => {
-            this.user = this.$store.state.user
+            this.storeUser()
             console.log(this.$store.state.user)
         })
-        this.user = this.$store.state.user
+        this.storeUser()
     }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
-    <div class="fixed-top w-100 shadow-sm" style="">
-        <div>
+    <div class="w-100" style="">
+        <div class="fixed-top shadow-sm w-100">
             <div class="d-flex justify-content-between position-relative align-items-center bg-white p-3">
                 <div class="">
                     <img src="../../public/logo.png" width="120" @click="this.$router.push('/')" />
@@ -48,13 +48,13 @@
 
 
                         <!-- INSIDE THE MODAL -->
-                        <div class="d-flex pt-5 justify-content-end d-md-none rt-drp-ignore pe-point"
-                            v-if="this.$store.getters.auth">
+                        <a class="d-flex pt-5 justify-content-end d-md-none rt-drp-ignore pe-point"
+                            v-if="this.$store.getters.auth" href="/profile">
                             <span class="text-sm text-nowrap py-1 text-gray my-auto mx-2 rt-drp-ignore pe-point">
                                 {{ user.name }}
                             </span>
                             <icon icon="bxs:user-circle" width="30" class="rt-drp-ignore my-auto text-sg-primary" />
-                        </div>
+                        </a>
                         <a class="dropdown-item w-100 p-2  pt-3 border-bottom border-sm d-md-none" v-else
                             href="/login">Login / SignUp</a>
                         <!-- <a class="dropdown-item w-100 p-2 pt-3 border-bottom border-sm" href="/terms">Terms and
@@ -82,6 +82,10 @@
                 </div>
             </div>
         </div>
+            <div class="text-start ps-3 d-md-none" syle="z-index:1050;"
+                v-if="!ignoredRoutes.includes(this.$route.name)">
+                <icon icon="typcn:arrow-back-outline" class="text-sg-primary" width="30" @click="this.$router.go(-1)" />
+            </div>
     </div>
 </template>
 
@@ -100,6 +104,7 @@ export default {
     },
     data() {
         return {
+            ignoredRoutes: ["Home","Order","Cart"],
             socials: [{
                 name: "Instagram",
                 icon: "akar-icons:instagram-fill",

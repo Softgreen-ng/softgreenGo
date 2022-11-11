@@ -1,9 +1,9 @@
 <template>
-  <div class="position-relative header-padding" style="min-height:100vh !important">
+  <div class="position-relative header-padding">
     <support-chat></support-chat>
     <confirm-dialog></confirm-dialog>
     <app-header class="w-100 " style="" />
-    <div class="h-100" style="">
+    <div class="h-100" style="min-height:50vh !important">
       <router-view v-slot="{ Component }">
         <transition name="slide">
           <component :is="Component" />
@@ -70,7 +70,7 @@ export default {
 }
 
 .header-padding {
-  padding-top: 60px;
+  padding-top: 75px;
 
   @media(min-width:768px) {
     padding-top: 75px;

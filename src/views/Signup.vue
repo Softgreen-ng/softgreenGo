@@ -99,7 +99,7 @@ export default {
     components: {},
     data() {
         return {
-            passType: 'text',
+            passType: 'password',
             user: {
                 phone: {
                     whatsapp:"",

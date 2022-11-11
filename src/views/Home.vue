@@ -31,7 +31,7 @@
 
             <div class="p-4 text-center">
                 <span class="text-start fs-4 font-1-bold fw-bold">
-                    Our products
+                    Available products
                 </span>
             </div>
             <div class="row py-md-3">
@@ -116,7 +116,7 @@
                                     style="font-size: 130px" />
                             </div>
                             <div class="fs-4 text-gray">
-                                Product Search not found <br />
+                                No Products found<br />
                                 <request-button class="mt-2"></request-button>
                             </div>
                         </div>

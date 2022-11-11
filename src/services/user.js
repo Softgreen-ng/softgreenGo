@@ -12,13 +12,16 @@ export const getProfile = async () => {
     }
 }
 
-export const updateProfile = async (formdata, id) => {
+export const updateProfile = async (id, formdata) => {
     const response = await http.put("users/" + id, formdata)
-    if (response.data.status) {
+    if (response.data.success) {
         store.commit('update', {
             name: "user",
             value: response.data.user // Add .user in Backend
         })
         return response.data
+    }
+    else {
+        return response.error
     }
 }
