@@ -5,30 +5,35 @@ import { Widget } from "@/functions/widget"
 
 if (process.env.NODE_ENV === 'production') {
   register(`${process.env.BASE_URL}service-worker.js`, {
-    ready () {
+    ready() {
       console.log(
         'App is being served from cache by a service worker.\n' +
         'For more details, visit https://goo.gl/AFskqB'
       )
     },
-    registered () {
+    registered() {
       console.log('Service worker has been registered.')
     },
-    cached () {
+    cached() {
       console.log('Content has been cached for offline use.')
     },
-    updatefound () {
+    updatefound() {
       console.log('New content is downloading.')
     },
-    updated () {
+    updated(registeration) {
       console.log('New content is available; please refresh.')
+      registeration.update()
+
+      caches.keys().then(function (names) {
+        for (let name of names) caches.delete(name);
+      });
       window.location.reload()
     },
-    offline () {
+    offline() {
       Widget.toast("No Internet Connection")
       console.log('No internet connection found. App is running in offline mode.')
     },
-    error (error) {
+    error(error) {
       console.error('Error during service worker registration:', error)
     }
   })

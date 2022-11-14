@@ -36,7 +36,7 @@
 							incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus" />
 					</div><br>
 					<div class="btn btn-sg-primary p-2 mt-3" @click="AddtoCart">
-						Add to Cart
+						Add to Basket
 					</div>
 				</div>
 		</Dialog>
@@ -48,7 +48,7 @@
 import Dialog from 'primevue/dialog';
 import InputNumber from 'primevue/inputnumber';
 import { AddOrUpdateCart } from "@/services/cart"
-
+import { getProductMeasure } from "@/functions/format"
 export default {
 	name: 'Footer',
 	props: {
@@ -78,11 +78,7 @@ export default {
 			this.$toast.success("Product Added to Cart")
 		},
 		getProductMeasure(unit){
-			if(unit == "kilo" )
-				return "kg"
-			if(unit == "grams" )
-				return "g"
-			return ""
+			return getProductMeasure(unit)
 		}
 	}
 }

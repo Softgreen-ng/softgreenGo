@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto pt-2 h-100 bg-anger">
+    <div class="mx-auto py-5 h-100 bg-anger">
         <div class="mx-auto text-center">
             <div class="row align-items-center">
                 <div class="col-12 col-md-4">

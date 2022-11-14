@@ -9,7 +9,12 @@ export default createStore({
     orders:[],
     categories:[],
     order:{},
-    zones:[]
+    zones:{
+      pickup:[],
+      delivery:[]
+    },
+    totalProducts: 0,
+    settings:{}
   },
   mutations: {
     update(state, {value, name}){

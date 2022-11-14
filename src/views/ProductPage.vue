@@ -137,7 +137,9 @@ export default {
         },
         getRelatedProducts(){
             getProducts({
-                category_id:this.product.category_id
+                category_id:this.product.category_id,
+                limit:10
+
             })
             .then((response) => {
                 this.relatedProducts = response.data.products

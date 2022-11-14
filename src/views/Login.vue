@@ -76,16 +76,19 @@ export default {
     methods: {
         async login() {
             Widget.openLoading()
-            const response = await login(this.user)
-            Widget.dismiss()
-            if (response.status == 200) {
-                this.$toast.success("Login Successfull")
-                location.href = this.$route.params.continue ?? "/"
-                return
+            try {
+                const response = await login(this.user)
+                Widget.dismiss()
+                if (response.status == 200) {
+                    this.$toast.success("Login Successfull")
+                    location.href = this.$route.params.continue ?? "/"
+                    // return
+                }
             }
-            // if(response.response){
-            this.$toast.show("Email and Password Incorrect")
-            // }
+            catch(e){
+                e;
+                this.$toast.show("Email or Password Incorrect")
+            }
         }
     },
     mounted() { }

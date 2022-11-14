@@ -45,16 +45,26 @@
             <h6 class="font-1 mt-4 text-l-gray text-center mb-3">
                 Delivery Details
             </h6>
-            <div class="row justify-content-center">
+            <select-button class="shadow-none fw-normal text-sm mx-auto p-2 text-center" v-model="delivery_type" :options="['delivery','pickup']"></select-button>
+            <div class="row justify-content-center mt-2" v-if="delivery_type == 'delivery'">
                 <select v-model="delivery.zone" placeholder="Select"
                     class="btn w-75 required mb-2 bg-white text-start form-control font-1 shadow-sm py-3 px-4 mx-300"
                     required="true">
                     <option v-for="zone in zones" :key="zone.id" :value="zone.name">{{ zone.name }}</option>
                     <option :value="''" disabled>Select delivery Zone</option>
                 </select>
-                <input class="btn w-75 shadow-sm mt-2 p-3 text-start" required v-model="delivery.location"
+                <input class="btn w-75 shadow-sm mt-2 p-3 text-start" :required="delivery_type == 'delivery' ? true : false " v-model="delivery.location"
                     placeholder="Enter Delivery Address" type="" />
             </div>
+            <div class="row justify-content-center mt-2" v-else>
+                <select v-model="delivery.zone" placeholder="Select"
+                    class="btn w-75 required mb-2 bg-white text-start form-control font-1 shadow-sm py-3 px-4 mx-300"
+                    required="true">
+                    <option v-for="zone in pickup" :key="zone.id" :value="zone.name">{{ zone.name }}</option>
+                    <option :value="''" disabled>Select Pickup location</option>
+                </select>
+            </div>
+            
             <div class="text-center text-md-start pt-4">
                 <span class="small font-2">
                     <v-calendar :available-dates='getNextDate' :attributes="[{
@@ -62,11 +72,8 @@
                         dates: this.getNextDate.start,
                         content: 'green'
                     
-                    }]" 
-                    class="border-0 font-2" 
-                    is-expanded 
-                    nav-visibility="">
-                </v-calendar>
+                    }]" class="border-0 font-2" is-expanded nav-visibility="">
+                    </v-calendar>
                     <small class="font-2">
                         Next Delivery Date takes place on
                         <b>
@@ -87,17 +94,24 @@
 <script>
 import { getZones } from "@/services/product"
 import { getNextDate } from "@/functions/date"
+import SelectButton from 'primevue/selectbutton';
+
 // import Widget from "@/functions/widget"
 
 export default {
     name: "CheckOut",
+    components: {
+        SelectButton
+    },
     data() {
         return {
             delivery: {
                 price: 0,
                 zone: ""
             },
-            zones: []
+            zones: [],
+            pickup: [],
+            delivery_type:'delivery'
         }
     },
     computed: {
@@ -126,9 +140,12 @@ export default {
         getZones()
             .then((response) => {
                 this.zones = response.data.zones
+                this.pickup = response.data.pickup
                 // Widget.dismiss()
             })
 
+
+        // Restore Previously Choosed Dates
         if (Object.keys(this.$store.getters.order) > 1) {
             const delivery = this.$store.getters.order.delivery
             this.delivery = delivery

@@ -10,7 +10,7 @@
             </div>
             <div class="p-3 w-100 text-start text-dark">
                 <div class="fw-bold fs-6">
-                    {{ product.title }}
+                    {{ product.title }} {{ product.weight*product.quantity }}{{ getProductMeasure(product.unit)}}
                 </div>
                 <div class="text-sg-secondary fw-bold font-2">
                     ₦{{ product.price*product.quantity}}
@@ -35,7 +35,8 @@
 
 <script>
 import InputNumber from "primevue/inputnumber"
-import { deleteCartProduct, AddOrUpdateCart } from "../services/cart"
+import { deleteCartProduct, AddOrUpdateCart } from "@/services/cart"
+import { getProductMeasure } from "@/functions/format"
 export default {
     name: "CartProduct",
     props: {
@@ -61,6 +62,9 @@ export default {
         },
         removeFromCart(){
             deleteCartProduct(this.product.id)
+        },
+        getProductMeasure(unit){
+            return getProductMeasure(unit)
         }
     },
     watch:{

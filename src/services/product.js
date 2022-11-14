@@ -6,9 +6,25 @@ export const getProducts = (formdata) => {
     .then((response) => {
         store.commit('update',{
             name:"products",
-            value: response.data.products
+            value: response.data.products.data
+        })
+        store.commit('update',{
+            name:"totalProducts",
+            value: response.data.products.total
         })
         return response;
+    })
+}
+
+export const getTemporaryProducts = (formdata) => {
+    return http.get('post', {params:{ ...formdata}})
+    .then((response) => {
+        const product = [...store.state.products , ...response.data.products.data]
+        store.commit('update',{
+            name:"products",
+            value:product
+        })
+        return response.data.products;
     })
 }
 

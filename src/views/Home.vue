@@ -74,9 +74,19 @@
                 </div>
                 <div class="col-12 col-md-9">
                     <div class="mt-4 mt-md-0">
+
+                        <div class="row pe-md-5 ms-md-5 px-3 px-md-0 ms-md-0">
+                            <div class="col-6 col-md-4 col-lg-3" v-for="product in this.$store.state.products"
+                                :key="product.id">
+                                <div class="text-center mb-4">
+                                    <product :product="product" class="mx-auto" />
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Loading  Skeleton-->
                         <div class="row pe-md-5 ms-md-5 px-3 px-md-0 ms-md-0" style=""
-                            v-if="!this.$store.state.products[0] && !loaded">
+                            v-if="!loaded">
                             <div class="col-6 col-md-4 col-lg-3 col-center" v-for="product in ['', '', '', '']"
                                 :key="product">
                                 <div class="text-center mb-4 w-100">
@@ -96,18 +106,16 @@
                         </div>
                         <!-- End of Skeleton -->
 
-                        <div class="row pe-md-5 ms-md-5 px-3 px-md-0 ms-md-0">
-                            <div class="col-6 col-md-4 col-lg-3" v-for="product in this.$store.state.products"
-                                :key="product.id">
-                                <div class="text-center mb-4">
-                                    <product :product="product" class="mx-auto" />
-                                </div>
-                            </div>
+                        
+                        <div class="btn btn-sg-primary mx-auto" @click="getTemporaryProduct" v-if="isPageNext">
+                            View more
                         </div>
-
-                        <div class="d-md-none p-2 mt-4" v-if="this.$store.state.products[0]">
+                        <div class="d-md-none p-2 mt-4" v-else>
                             <request-button></request-button>
                         </div>
+                        <!-- <div class="d-md-none p-2 mt-4" v-if="this.$store.state.products[0]">
+                            <request-button></request-button>
+                        </div> -->
 
                         <!-- No Product Found -->
                         <div class="h-100 p-5 my-5" v-if="!this.$store.state.products[0] && loaded">
@@ -133,6 +141,7 @@ import Product from '@/components/Product'
 import RequestButton from '@/components/RequestButton'
 import { getProducts, getCategories } from "@/services/product"
 import Widget from "@/functions/widget"
+import { getTemporaryProducts } from '../services/product'
 
 export default {
     name: 'Home',
@@ -142,13 +151,26 @@ export default {
     },
     data() {
         return {
-            filters: {},
+            filters: {
+                page: 1,
+                limit: 100
+            },
             loaded: false,
             modal: {
                 isVisible: false,
                 product: {}
             },
-            prev:0
+            prev:0,
+        }
+    },
+    computed: {
+        isPageNext(){
+            var current = this.filters.limit * this.filters.page
+            console.log(this.$store.state.totalProducts, current)
+            if(this.$store.state.totalProducts <= current)
+                return false
+            else   
+                return true
         }
     },
     methods: {
@@ -159,27 +181,24 @@ export default {
                 Widget.dismiss()
             })
         },
+        getTemporaryProduct(){
+            Widget.openLoading()
+            this.loaded = false
+            getTemporaryProducts(this.filters)
+            .then(() => {
+                this.filters.page += 1
+                Widget.dismiss()
+            })
+            this.loaded = true
+        },
         // getCategories() {
         //     getCategories()
         // },
         throttleFunction(func, delay) {
-
-            // Previously called time of the function
             return (...args) => {
-                // Current called time of the function
                 let now = new Date().getTime();
-
-                // Logging the difference between previously
-                // called and current called timings
-                // console.log(now - prev, delay);
-
-                // If difference is greater than delay call
-                // the function again.
                 if (now - this.prev > delay) {
                     this.prev = now;
-                    // "..." is the spread operator here
-                    // returning the function with the
-                    // array of arguments
                     return func(...args);
                 }
             }
@@ -201,7 +220,7 @@ export default {
                 return;
             }
             this.filters.category_id = cat.id
-            this.throttleFunction(this.getProducts(this.filters), 500000)
+            this.throttleFunction(this.getProducts(this.filters), 5000)
         }
     },
     watch: {
@@ -213,12 +232,11 @@ export default {
         // }
     },
     created() {
-        getProducts()
+        getProducts(this.filters)
             .then(() => {
                 this.loaded = true
             })
         getCategories()
-        // console.log(this.$s66666666666666666666666666666666666666666tore.state.products[0].unit)
     },
 }
 </script>
