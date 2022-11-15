@@ -142,7 +142,7 @@ export default {
 
             })
             .then((response) => {
-                this.relatedProducts = response.data.products
+                this.relatedProducts = response.data.products.data
                 this.relatedProducts.splice(this.relatedProducts.indexOf(this.product) -1,1)
             })
         }
