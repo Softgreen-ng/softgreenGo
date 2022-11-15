@@ -72,7 +72,7 @@ http.interceptors.response.use((response) => {
             // The request was made but no response was received
         }
         else {
-            // toast.show(error.message);
+            toast.show(error.message);
         }
         return error;
     })
