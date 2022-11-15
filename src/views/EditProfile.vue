@@ -102,6 +102,7 @@ export default {
         storeUser(){
             this.user.id = this.$store.state.user.id
             this.user.name = this.$store.state.user.name
+            this.user.email = this.$store.state.user.email
             this.user.title = this.$store.state.user.title
             this.user.phone.whatsapp = this.$store.state.user.phone.whatsapp
             this.user.phone.contact = this.$store.state.user.phone.contact

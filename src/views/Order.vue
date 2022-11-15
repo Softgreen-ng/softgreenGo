@@ -39,7 +39,7 @@
                     <icon icon="entypo:shopping-bag" class="text-sg-secondary"  style="font-size:130px"/>
                 </div>
                 <div class="text-gray mt-2">
-                    Your order would apper here
+                    Your orders would apper here
                 </div>
             </div>
         </div>
@@ -70,6 +70,9 @@ export default {
 
 .delivered {
     background-color: rgb(17, 172, 123) !important;
+}
+.rejected {
+    background-color: rgb(207, 81, 22) !important;
 }
 
 .confirmed {
