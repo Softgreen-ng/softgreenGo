@@ -2,7 +2,7 @@ import store from "../store"
 
 export const AddOrUpdateCart = ({ id, title, price, weight, unit, status, thumbnail }, quantity) => {
     let currentCart = store.state.cart
-    let product = { id, title, price, weight, unit, status}
+    let product = { id, title, price, weight, unit, status, thumbnail}
     if(currentCart[product.id])
         currentCart[product.id].quantity = quantity
     else {
