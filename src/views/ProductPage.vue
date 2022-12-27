@@ -167,7 +167,7 @@ export default {
     },
     watch: {
         quantity(qty) {
-            if (qty == 0) {
+            if (qty == 0 && this.$store.state.cart[this.product.id]) {
                 this.$toast.success("Product removed from basket")
                 deleteCartProduct(this.product.id)
             }
