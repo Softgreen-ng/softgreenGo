@@ -1,10 +1,10 @@
 <template>
     <form class="h-100 d-flex mt-3 mt-md-5 align-items-center justify-content-center" @submit.prevent="proceedToPayment">
         <div class=" p-4 text-start rounded-20 w-100">
-            <h2 class="fw-bold text-sg-secondary _text-center text-md-start">
+            <h2 class="fw-bold text-sg-secondary _text-center text-md-start d-md-none">
                 Checkout
             </h2>
-            <h6 class="font-1 mt-3 text-l-gray text-center mb-3">
+            <h6 class="font-1 mt-3 text-l-gray text-center mb-3 ">
                 Order Summary
             </h6>
             <div class="d-flex justify-content-around w-100 p-1 small">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <h6 class="font-1 mt-4 text-l-gray _text-center mb-3">
+            <h6 class="font-1 mt-4 text-l-gray text-center mb-3">
                 Delivery Details
             </h6>
             <select-button class="shadow-none w-100 fw-normal text-sm mx-auto p-2 text-center" v-model="delivery_type" :options="['delivery','pickup']"></select-button>
