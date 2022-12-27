@@ -1,5 +1,5 @@
 <template>
-    <Button @click="openWhatsapp"
+    <Button @click="openWhatsapp" v-if="this.$route.name == 'Home'"
         class="btn-sg-primary border-0 p-0 d-flex p-ripple align-items-center fixed-bottom float-end justify-self-end justify-content-center rounded-circle mx-4"
         style="width:max-content;left:auto !important;" v-tooltip="'Chat with customer care'">
         <icon icon="fa:whatsapp" class="fs-3" />

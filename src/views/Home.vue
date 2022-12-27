@@ -110,7 +110,7 @@
                         <div class="btn btn-sg-primary mx-auto" @click="getTemporaryProduct" v-if="isPageNext">
                             View more
                         </div>
-                        <div class="d-md-none p-2 mt-4" v-else>
+                        <div class="d-md-none p-2 mt-4" v-if="!isPageNext && loaded && this.$store.state.products[0]">
                             <request-button></request-button>
                         </div>
                         <!-- <div class="d-md-none p-2 mt-4" v-if="this.$store.state.products[0]">

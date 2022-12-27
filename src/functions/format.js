@@ -8,5 +8,9 @@ const getProductMeasure = (unit) => {
         return "g"
     return ""
 }
+// const getFullProductName = (product) => {
+//     const unit = getProductMeasure(product.unit)
+//     return product.title + (product.weight ? product.weight : '') + unit
+// }
 
 export { setPhoneFormat , getProductMeasure}

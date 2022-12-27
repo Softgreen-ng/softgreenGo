@@ -1,6 +1,6 @@
 <template>
-    <div class="w-100" style="">
-        <div class="fixed-top shadow-sm w-100">
+    <div class="fixed-top w-100" style="">
+        <div class="shadow-sm w-100">
             <div class="d-flex justify-content-between position-relative align-items-center bg-white p-3">
                 <div class="">
                     <img src="../../public/logo.png" width="120" @click="this.$router.push('/')" />
@@ -90,7 +90,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-start ps-3 d-md-none" syle="z-index:1050;" v-if="!ignoredRoutes.includes(this.$route.name)">
+        <div class="text-start ps-3 p-2 d-md-none" syle="z-index:1050;" v-if="!ignoredRoutes.includes(this.$route.name)">
             <icon icon="typcn:arrow-back-outline" class="text-sg-primary" width="30" @click="this.$router.go(-1)" />
         </div>
     </div>
