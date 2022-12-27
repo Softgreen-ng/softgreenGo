@@ -57,14 +57,14 @@
 
                         <div class="col-12" v-else>
                             <div class="mt-3 d-flex justify-content-start" style="max-width: 500px;">
-                                <button class="btn btn-sg-primary p-2 px-3 me-2">
+                                <a href="/" class="btn btn-sg-primary p-2 px-3 me-2">
                                     Continue Shopping
-                                </button>
-                                <button class="btn btn-sg-secondary p-2 px-3">
+                                </a>
+                                <a href="/checkout" class="btn btn-sg-secondary p-2 px-3">
                                     <span class="text-dark">
                                         Complete your order
                                     </span>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </form>
@@ -129,7 +129,7 @@ export default {
         return {
             product: {},
             relatedProducts: [],
-            quantity: 0,
+            quantity: 1,
             isAddedtoCart: false
         };
     },
