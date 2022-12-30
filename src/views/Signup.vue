@@ -44,8 +44,8 @@
                         <label class="my-2">
                             Whatsapp Number
                         </label>
-                        <input v-model="user.phone.whatsapp" type="tel" inputmode="numeric" minlength="11" maxlength="13"
-                            class="btn bg-white text-start form-control font-1 shadow py-3 px-4" />
+                        <input v-model="user.phone.whatsapp" type="tel" inputmode="numeric" minlength="11"
+                            maxlength="13" class="btn bg-white text-start form-control font-1 shadow py-3 px-4" />
                     </div>
 
                     <div class="mt-3 mb-2 form-input">
@@ -56,7 +56,7 @@
                             </span>
                         </label>
                         <input v-model="user.phone.contact" type="tel" inputmode="numeric" minlength="11" maxlength="13"
-                            class="btn bg-white text-start form-control font-1 shadow py-3 px-4"/>
+                            class="btn bg-white text-start form-control font-1 shadow py-3 px-4" />
                     </div>
 
                     <div class="mt-3 mb-2 form-input">
@@ -102,8 +102,8 @@ export default {
             passType: 'password',
             user: {
                 phone: {
-                    whatsapp:"",
-                    contact:""
+                    whatsapp: "",
+                    contact: ""
                 }
             },
             validations: {}
@@ -113,18 +113,18 @@ export default {
         signup() {
             Widget.openLoading()
             signup(this.user)
-            .then((response) => {
-                if(response.data.errors === false){
-                   location.href = this.$route.params.continue ?? "/"
-                }
-                else{
-                    let k = Object.keys(response.data)
-                    let error = response.data[k][0]
-                    console.log(error)
-                    this.$toast.show(error)
-                }
-                Widget.dismiss()
-            })
+                .then((response) => {
+                    if (response.data.errors === false) {
+                        location.href = "./" + this.$route.params.continue
+                    }
+                    else {
+                        let k = Object.keys(response.data)
+                        let error = response.data[k][0]
+                        console.log(error)
+                        this.$toast.show(error)
+                    }
+                    Widget.dismiss()
+                })
         }
 
     },

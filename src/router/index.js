@@ -12,7 +12,7 @@ var toast = createToaster({
 )
 const redirectIfAuthenticated = () => {
   if (store.getters.auth) {
-    createToaster({}).show(`User needs to be authenticated`);
+    createToaster({}).show(`User already logged in`);
     return {
       path: "/"
     }

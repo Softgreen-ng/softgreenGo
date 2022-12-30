@@ -29,6 +29,22 @@
                 <div></div>
             </div>
 
+
+            <swiper :slides-per-view="1" :autoplay="true" :navigation="false" :space-between="5" @swiper="onSwiper" @_slideChange="onSlideChange"
+                _class="default-slider" style="max-height:400px">
+                <swiper-slide class="p-2">
+                    <div @click="this.$router.push('/login')">
+                        <img src="../../public/img/slides/one.png" class="h-100 w-100" />
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="p-2">
+                    <div>
+                        <img src="../../public/img/slides/two.png" class="h-100 w-100" />
+                    </div>
+                </swiper-slide>
+            </swiper>
+
+
             <div class="p-4 text-center">
                 <span class="text-start fs-4 font-1-bold fw-bold">
                     Available products
@@ -85,8 +101,7 @@
                         </div>
 
                         <!-- Loading  Skeleton-->
-                        <div class="row pe-md-5 ms-md-5 px-3 px-md-0 ms-md-0" style=""
-                            v-if="!loaded">
+                        <div class="row pe-md-5 ms-md-5 px-3 px-md-0 ms-md-0" style="" v-if="!loaded">
                             <div class="col-6 col-md-4 col-lg-3 col-center" v-for="product in ['', '', '', '']"
                                 :key="product">
                                 <div class="text-center mb-4 w-100">
@@ -106,7 +121,7 @@
                         </div>
                         <!-- End of Skeleton -->
 
-                        
+
                         <div class="btn btn-sg-primary mx-auto" @click="getTemporaryProduct" v-if="isPageNext">
                             View more
                         </div>
@@ -142,12 +157,21 @@ import RequestButton from '@/components/RequestButton'
 import { getProducts, getCategories } from "@/services/product"
 import Widget from "@/functions/widget"
 import { getTemporaryProducts } from '../services/product'
+import { Swiper } from "swiper/vue/swiper";
+import { SwiperSlide } from "swiper/vue/swiper-slide";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
+// import Swiper, { Navigation, Pagination, Scrollbar } from 'swiper';
+
+SwiperCore.use([Pagination, Autoplay]);
+
 
 export default {
     name: 'Home',
     components: {
         Product,
         RequestButton,
+        Swiper,
+        SwiperSlide,
     },
     data() {
         return {
@@ -160,16 +184,16 @@ export default {
                 isVisible: false,
                 product: {}
             },
-            prev:0,
+            prev: 0,
         }
     },
     computed: {
-        isPageNext(){
+        isPageNext() {
             var current = this.filters.limit * this.filters.page
             console.log(this.$store.state.totalProducts, current)
-            if(this.$store.state.totalProducts <= current)
+            if (this.$store.state.totalProducts <= current)
                 return false
-            else   
+            else
                 return true
         }
     },
@@ -177,18 +201,18 @@ export default {
         getProducts(filter) {
             Widget.openLoading()
             getProducts(filter)
-            .then(() => {
-                Widget.dismiss()
-            })
+                .then(() => {
+                    Widget.dismiss()
+                })
         },
-        getTemporaryProduct(){
+        getTemporaryProduct() {
             Widget.openLoading()
             this.loaded = false
             getTemporaryProducts(this.filters)
-            .then(() => {
-                this.filters.page += 1
-                Widget.dismiss()
-            })
+                .then(() => {
+                    this.filters.page += 1
+                    Widget.dismiss()
+                })
             this.loaded = true
         },
         // getCategories() {

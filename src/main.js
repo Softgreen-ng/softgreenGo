@@ -15,6 +15,15 @@ import "primevue/resources/primevue.min.css"           //core css
 import "primeicons/primeicons.css"
 import "primevue/resources/themes/lara-light-blue/theme.css"
 
+// Import Swiper styles
+import "swiper/swiper.min.css";
+// import "swiper/swiper-bundle.min.css";
+// import "swiper/swiper-bundle.css";
+import "swiper/modules/pagination/pagination.min.css";
+import "swiper/modules/autoplay/autoplay.min.css";
+import "swiper/modules/navigation/navigation.min.css";
+
+
 
 /*
 

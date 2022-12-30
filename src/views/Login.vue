@@ -81,7 +81,7 @@ export default {
                 Widget.dismiss()
                 if (response.status == 200) {
                     this.$toast.success("Login Successfull")
-                    location.href = this.$route.params.continue ?? "/"
+                    location.href = "./" + this.$route.params.continue
                     // return
                 }
             }
