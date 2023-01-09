@@ -115,7 +115,7 @@ export default {
             signup(this.user)
                 .then((response) => {
                     if (response.data.errors === false) {
-                        location.href = "./" + this.$route.params.continue
+                        location.href = "./" + (this.$route.params.continue ?? '' )
                     }
                     else {
                         let k = Object.keys(response.data)
