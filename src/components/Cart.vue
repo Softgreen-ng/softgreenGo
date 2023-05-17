@@ -10,7 +10,7 @@
             </div>
             <div class="p-3 w-100 text-start text-dark">
                 <div class="fw-bold fs-6">
-                    {{ product.title }} {{ product.weight ? product.weight*product.quantity : '' }}{{ getProductMeasure(product.unit)}}
+                    {{ product.title }} {{ product.measure ? product.measure*product.quantity : '' }}{{ getProductMeasure(product.unit)}}
                 </div>
                 <div class="text-sg-secondary fw-bold font-2">
                     ₦{{ product.price*product.quantity}}

@@ -28,74 +28,119 @@ const redirectIfNotAuthenticated = () => {
     }
   }
 }
+
+
+
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home,
     meta: {
-      transition: 'slide-right'
+      transition: 'slide-right',
+      title:"SoftGreen Go, Fresh at your fingertips"
     },
   },
-  {
-    path: '/homepage',
-    name: 'HomePage',
-    component: Home,
-    meta: {
-      transition: 'slide-right'
-    },
-  },
+  // {
+  //   path: '/homepage',
+  //   name: 'HomePage',
+  //   component: Home,
+  //   meta: {
+  //     transition: 'slide-right'
+  //   },
+  // },
   {
     path: '/signup',
     name: 'SignUp',
     component: () => import('@/views/Signup.vue'),
-    beforeEnter: redirectIfAuthenticated
-  },
-  {
-    path: '/signup/:continue',
-    name: 'SignUpAndContinue',
-    component: () => import('@/views/Signup.vue'),
-    beforeEnter: redirectIfAuthenticated
+    beforeEnter(to, from) {
+			to.params.continue = from.path ?? '' 
+      const red = redirectIfAuthenticated
+      if(red)
+      return red
+		},
+    meta: {
+      title:"Signup"
+    }
   },
   {
     path: '/login',
     name: 'Login',
     component: () => import('@/views/Login.vue'),
-    beforeEnter: redirectIfAuthenticated
+    meta: {
+      title:"Login"
+    },
+    beforeEnter(to, from) {
+			to.params.continue = from.path ?? '' 
+      const red = redirectIfAuthenticated
+      if(red)
+      return red
+		}
 
   },
   {
-    path: '/login/:continue',
-    name: 'LoginAndContinue',
-    component: () => import('@/views/Login.vue'),
-    beforeEnter: redirectIfAuthenticated
+    path: '/recover',
+    name: 'ForgotPassword',
+    component: () => import('@/views/password/ForgotPassword.vue'),
+    beforeEnter: redirectIfAuthenticated,
+    meta: {
+      title:"Forogot Password"
+    }
+
+  },
+  {
+    path: '/recover/sent',
+    name: 'ResetPasswordSent',
+    component: () => import('@/views/success/ForgotPasswordSent.vue'),
+    beforeEnter: redirectIfAuthenticated,
+    meta: {
+      title:"Email Sent"
+    }
+
+  },
+  {
+    path: '/recover/:id/:token',
+    name: 'Reset Password',
+    component: () => import('@/views/password/RecoverPassword.vue'),
+    beforeEnter: redirectIfAuthenticated,
+    meta: {
+      title:"ResetPassword"
+    }
+
   },
   {
     path: '/welcome',
     name: 'Welcome',
-    component: () => import('@/views/Welcome.vue')
+    component: () => import('@/views/Welcome.vue'),
+    meta: {
+      title:"Welcome"
+    }
   },
   {
     path: '/cart',
     name: 'Cart',
     component: () => import('@/views/Cart.vue'),
+    meta: {
+      title:"Cart"
+    }
   },
   {
     path: '/checkout',
     name: 'Checkout',
     component: () => import('@/views/Checkout.vue'),
-    beforeEnter: redirectIfNotAuthenticated
+    beforeEnter: redirectIfNotAuthenticated,
+    meta: {
+      title:"Complete your order"
+    }
   },
   {
     path: '/payment',
     name: 'Payment',
     component: () => import('@/views/Payment.vue'),
-    beforeEnter: redirectIfNotAuthenticated
-  },
-  {
-    path: '/faq',
-    name: 'Faq',
-    component: () => import('@/views/Faq.vue')
+    beforeEnter: redirectIfNotAuthenticated,
+    meta: {
+      title:"Payment"
+    }
   },
   // {
   //   path: '/dashboard',
@@ -105,52 +150,72 @@ const routes = [
   {
     path: '/product/:id',
     name: 'SingleProduct',
-    component: () => import('@/views/ProductPage.vue')
+    component: () => import('@/views/ProductPage.vue'),
+    meta: {
+      title:""
+    }
+
   },
 
   // POLICIES
   {
     path: '/policy',
     name: 'Policy',
-    component: () => import('@/views/policy/Policy.vue')
-  },
-  {
-    path: '/route',
-    name: 'Route',
-    component: () => import('@/views/Route.vue')
+    component: () => import('@/views/policy/Policy.vue'),
+    meta: {
+      title:"Policy"
+    }
   },
   {
     path: '/order/completed',
     name: 'OrderComplete',
-    component: () => import('@/views/success/Order.vue')
+    component: () => import('@/views/success/Order.vue'),
+    meta: {
+      title:"Your Order has been recieved"
+    }
   },
   {
     path: '/order',
     name: 'Order',
     component: () => import('@/views/Order.vue'),
-    beforeEnter: redirectIfNotAuthenticated
+    beforeEnter: redirectIfNotAuthenticated,
+    meta: {
+      title:"Order"
+    }
   },
   {
     path: '/profile/edit',
     name: 'EditProflie',
     component: () => import('@/views/EditProfile.vue'),
-    beforeEnter: redirectIfNotAuthenticated
+    beforeEnter: redirectIfNotAuthenticated,
+    meta: {
+      title:"Edit Profile"
+    }
   },
   {
     path: '/profile',
     name: 'Proflie',
     component: () => import('@/views/Profile.vue'),
-    beforeEnter: redirectIfNotAuthenticated
+    beforeEnter: redirectIfNotAuthenticated,
+    meta: {
+      title:"Profile"
+    }
   },
   {
     path: '/request',
     name: 'Request',
-    component: () => import('@/views/Request.vue')
+    component: () => import('@/views/Request.vue'),
+    meta: {
+      title:"Request"
+    }
   },
   {
     path: '/request/success',
     name: 'RequestSuccess',
-    component: () => import('@/views/success/Request.vue')
+    component: () => import('@/views/success/Request.vue'),
+    meta: {
+      title:"Request Successful"
+    }
   },
   {
     path: '/terms',
@@ -169,12 +234,20 @@ const routes = [
     path: "/:catchAll(.*)",
     name: 'ErrorPage',
     component: ErrorPage,
+    meta: {
+      title: "It got Spoilt"
+    }
   },
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
+})
+
+router.beforeEach((to) => { 
+  document.title = to.meta.title ?? document.title;
+  return true;
 })
 
 export default router

@@ -2,7 +2,7 @@
     <div class="" style="">
         <div class="px-2">
             <h3 class="text-center fw-bold mt-3 text-sg-secondary font-1">
-                Your Cart (₦{{ this.$store.getters.totalPrice}})
+                Your Basket (₦{{ this.$store.getters.totalPrice}})
             </h3>
             <div class="row px-md-2 mt-2 align-items-stretch">
                 <div class="col-12 col-md-5">
@@ -55,7 +55,7 @@ export default {
     methods: {
         goToLogin(){
             this.$toast.show("You have to be logged in to checkout")
-            this.$router.push("/login/checkout")
+            this.$router.push("/login")
         }
     },
     created() {

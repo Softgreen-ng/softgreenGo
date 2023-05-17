@@ -34,6 +34,9 @@
                     <div class="text-danger mt-2 text-center text-sm" v-if="isLoginBad" ref="badLogin">
                         * incorrect login credentials
                     </div>
+                    <a class="d-flex text-gray mt-3 text-end text-sm w-100" href="/recover">
+                        Forgot your password
+                    </a>
                 </div>
 
                 <div class="d-flex justify-content-center mt-5">
@@ -81,7 +84,7 @@ export default {
                 Widget.dismiss()
                 if (response.status == 200) {
                     this.$toast.success("Login Successfull")
-                    location.href = "./" + this.$route.params.continue
+                    location.href =  this.$route.params.continue
                     // return
                 }
             }

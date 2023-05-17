@@ -31,7 +31,7 @@
 
 
             <swiper :slides-per-view="1" :autoplay="true" :navigation="false" :space-between="5" @swiper="onSwiper" @_slideChange="onSlideChange"
-                _class="default-slider" style="max-height:400px">
+                _class="default-slider" style="max-height:400px;max-width:600px">
                 <swiper-slide class="p-2">
                     <div @click="this.$router.push('/login')">
                         <img src="../../public/img/slides/one.png" class="h-100 w-100" />

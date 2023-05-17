@@ -8,7 +8,7 @@
                 <div class="d-flex align-items-center">
                     <div class="align-items-center d-none d-md-flex pe-point" @click="this.$router.push('/cart')">
                         <small class="text-sm me-3">
-                            Cart
+                            Basket
                         </small>
                         <cart-icon width="35" class="me-2 text-l-gray fs-2"></cart-icon>
                     </div>

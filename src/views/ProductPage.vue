@@ -14,7 +14,7 @@
                 <div class="col-12 col-md-6">
                     <div class="py-4 px-3 text-start">
                         <div class="h4 text-dark fw-bolder">
-                            {{ getFullProductName(product) }}
+                            {{ getFullProductName(product) ?? ''}}
                         </div>
                         <div class="text-sg-secondary font-2 fs-5 fw-bold">
                             &#x20A6;{{ product.price }}
@@ -161,7 +161,11 @@ export default {
             })
                 .then((response) => {
                     this.relatedProducts = response.data.products.data
-                    this.relatedProducts.splice(this.relatedProducts.indexOf(this.product) - 1, 1)
+                    // this.relatedProducts.splice(this.relatedProducts.indexOf(this.product) - 1, 1)
+                    this.relatedProducts = response.data.products.data.filter((product) => {
+                        console.log(product.id, this.product.id)
+                        product.id != this.product.id 
+                    })
                 })
         }
     },
@@ -179,6 +183,7 @@ export default {
     async created() {
         Widget.openLoading()
         await this.getProduct()
+        document.title = this.product.title
         Widget.dismiss()
         this.getRelatedProducts()
         this.checkisAddedtoCart()

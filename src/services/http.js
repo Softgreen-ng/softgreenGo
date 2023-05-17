@@ -25,7 +25,7 @@ const http = axios.create({
     ],
     headers: {
         "Authorization": "Bearer " + accessToken,
-        accept: 'application/json',
+        "Accept": 'application/json',
         'Content-Type': 'application/json',
     },
     // responseType: "application/json"
@@ -36,9 +36,10 @@ http.interceptors.request.use((request) => {
     // console.log("Request Successfull", request);
     return request
 },
-    error => {
+    (error) => {
 
         console.error("Request Unuccessfull", error);
+        return error;
     }
 );
 
@@ -47,7 +48,7 @@ http.interceptors.response.use((response) => {
 
     return response;
 },
-    (error => {
+    (error) => {
         try {
             Widget.dismiss()
         }
@@ -55,7 +56,7 @@ http.interceptors.response.use((response) => {
             console.log(e.message)
         }
 
-        console.log("Response Error", error);
+        // console.log("Response Error", error);
         if (error.response) {
             if (error.response.data.errors) {
                 if (error.response.data.token_invalid || error.response.data.token_expired) {
@@ -74,8 +75,8 @@ http.interceptors.response.use((response) => {
         else {
             toast.show(error.message);
         }
-        return error;
-    })
+        // return error;
+    }
 
 )
 

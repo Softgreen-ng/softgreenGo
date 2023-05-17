@@ -14,7 +14,9 @@ export default createStore({
       delivery:[]
     },
     totalProducts: 0,
-    settings:{}
+    settings:{},
+    locations:[],
+    addresses:[]
   },
   mutations: {
     update(state, {value, name}){
@@ -61,6 +63,9 @@ export default createStore({
       })
 
       return sum
+    },
+    location(){
+      return localStorage.getItem("location")
     }
   }
 })

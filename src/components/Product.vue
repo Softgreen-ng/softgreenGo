@@ -25,7 +25,7 @@
 			&#x20A6;{{ product.price }}
 		</div>
 		<div class="text-start small font-1 fs-6 fw-bold">
-			{{ product.title }} {{ product.weight ? product.weight : '' }}{{ getProductMeasure(product.unit) }}<br>
+			{{ product.title }} {{ product.measure ? product.measure : '' }}{{ getProductMeasure(product.unit) }}<br>
 			<span class="small text-rt-yellow font-1 font-2">
 				{{ product.location }}
 			</span>
@@ -33,7 +33,7 @@
 		<Dialog v-model:visible="modal.isVisible">
 			<div class="text-center mw-100">
 				<h5 class="font-2 text-sg-secondary fw-bold mb-2">
-					{{ product.title }} {{ product.weight ? product.weight * quantity   : '' }}{{ getProductMeasure(product.unit) }}<br>
+					{{ product.title }} {{ product.measure ? product.measure * quantity   : '' }}{{ getProductMeasure(product.unit) }}<br>
 					<!-- <span class="small text-rt-yellow font-1 font-2">
 						{{ product.location }}
 					</span> -->
@@ -43,7 +43,7 @@
 				</div>
 
 				<div class="px-2 mx-auto my-3">
-					<InputNumber :min="1" v-model="quantity" required mode="decimal" showButtons
+					<InputNumber :min="1" v-model="qty" required mode="decimal" showButtons
 						buttonLayout="horizontal" class="small-inp text-center justicy-content-center border-0 w-100"
 						decrementButtonClass="square p-button-text text-white  btn-sg-secondary rounded-circle"
 						incrementButtonClass="square p-button-success  rounded-circle" incrementButtonIcon="pi pi-plus"
@@ -67,9 +67,7 @@ import cartMixin from "@/functions/mixins/cartMixin"
 
 export default {
 	name: 'Footer',
-	props: {
-		product: Object
-	},
+	props: ["product"],
 	mixins:[cartMixin],
 	components: {
 		Dialog,
@@ -81,7 +79,9 @@ export default {
 				isVisible: false,
 				product: {},
 			},
-			quantity: 1
+			quantity: 1,
+			qty:1,
+			// product:{}
 
 		}
 	},
@@ -90,7 +90,8 @@ export default {
 			location.href = '/product/' + this.product.id
 		},
 		AddtoCart() {
-			addOrUpdateCart(this.product, this.quantity)
+			// this.quantity = this.qty
+			addOrUpdateCart(this.product, this.qty)
 			this.modal.isVisible = false
 			this.$toast.success("Product Added to Cart")
 		},
@@ -99,7 +100,11 @@ export default {
 		}
 	},
 	created() {
-		// console.log(this.methods
+		// this.product = this.productProp
+		// let price = product.price[0]
+		// delete(product.price)
+		// this.product = { ...product, ...price}
+		console.log(this.product)
 	}
 }
 </script>

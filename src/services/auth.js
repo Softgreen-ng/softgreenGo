@@ -22,3 +22,17 @@ export const login = (formdata) => {
         return response
     })
 }
+
+export const recoverPassword = (formdata) => {
+    return http.post('password/email',{ ...formdata })
+    .then((response) => {
+        return response.data
+    })
+}
+
+export const resetPassword = (formdata) => {
+    return http.post('password/reset',{ ...formdata })
+    .then((response) => {
+        return response.data
+    })
+}
