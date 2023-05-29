@@ -51,7 +51,7 @@
                 <select v-model="delivery.zone" placeholder="Select"
                     class="btn _w-75 required mb-2 bg-white text-start form-control font-1 shadow-sm py-3 _px-4 mx-300"
                     required>
-                    <option v-for="zone in zones" :key="zone.id" :value="zone.name">{{ zone.name }}</option>
+                    <option v-for="zone in zones" :key="zone.id" :value="zone.id">{{ zone.name }}</option>
                     <option :value="''" disabled>Select delivery Zone</option>
                 </select>
                 <input class="btn _w-75 shadow-sm mt-2 p-3 text-start"
@@ -86,12 +86,12 @@
                 <select v-model="delivery.zone" placeholder="Select"
                     class="btn _w-75 required mb-2 bg-white text-start form-control font-1 shadow-sm py-3 px-4 mx-300"
                     required>
-                    <option v-for="zone in pickup" :key="zone.id" :value="zone.name">{{ zone.name }}</option>
+                    <option v-for="zone in pickup" :key="zone.id" :value="zone.id">{{ zone.name }}</option>
                     <option :value="''" disabled>Select Pickup location</option>
                 </select>
             </div>
 
-            <div class="text-center _text-md-start pt-4">
+            <!-- <div class="text-center _text-md-start pt-4">
                 <span class="small font-2">
                     <v-calendar :available-dates='getNextDate' :min-Date="this.getNextDate.start" :attributes="[{
                         highlight: 'green',  // Boolean, String, Object
@@ -107,7 +107,7 @@
                         </b>
                     </small>
                 </span>
-            </div>
+            </div> -->
             <div class="mt-5 mb-3 text-center">
                 <button type="submit" class="btn btn-sg-primary px-3">
                     Proceed to Payment

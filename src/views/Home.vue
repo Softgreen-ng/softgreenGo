@@ -31,14 +31,18 @@
 
 
             <swiper :slides-per-view="1" :autoplay="true" :navigation="false" :space-between="5" @swiper="onSwiper" @_slideChange="onSlideChange"
-                _class="default-slider" style="max-height:400px;max-width:600px">
+                _class="default-slider" :breakpoints="{
+					790: {
+						slidesPerView: 2,
+					},
+				}" style="max-height:400px">
                 <swiper-slide class="p-2">
-                    <div @click="this.$router.push('/login')">
-                        <img src="../../public/img/slides/one.png" class="h-100 w-100" />
+                    <div @click="this.$router.push('/login')" class="h-100 w-100">
+                        <img src="../../public/img/slides/one.png" class="h-100 w-100"/>
                     </div>
                 </swiper-slide>
                 <swiper-slide class="p-2">
-                    <div>
+                    <div class="h-100 w-100">
                         <img src="../../public/img/slides/two.png" class="h-100 w-100" />
                     </div>
                 </swiper-slide>

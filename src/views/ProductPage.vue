@@ -97,7 +97,7 @@
                         </div>
                     </div>
                 </div> -->
-            <section class="h4 text-sg-primary text-start  mb-3 mt-5 fw-bold">Related Products</section>
+            <section v-if="relatedProducts[0]" class="h4 text-sg-primary text-start  mb-3 mt-5 fw-bold">Related Products</section>
             <div class="d-flex overflow-auto w-100">
                 <div class="mx-2" v-for="product in relatedProducts" :key="product.id">
                     <product :product="product" class="" style="min-width:180px" />
@@ -139,11 +139,11 @@ export default {
         async getProduct() {
             const response = await getSingleProduct(this.$route.params.id)
             this.product = response.data.product
+            // console.log("Product", this.product)
         },
         checkisAddedtoCart() {
-            console.log(this.$store.state.cart[this.product.id].quantity)
-            if(this.$store.state.cart[this.product.id]){
-                this.quantity = this.$store.state.cart[this.product.id].quantity
+            if(this.$store.state.cart[this.product.post_id]){
+                this.quantity = this.$store.state.cart[this.product.post_id].quantity
             }
                 
         },
@@ -160,11 +160,11 @@ export default {
 
             })
                 .then((response) => {
-                    this.relatedProducts = response.data.products.data
+                    // this.relatedProducts = response.data.products.data
                     // this.relatedProducts.splice(this.relatedProducts.indexOf(this.product) - 1, 1)
                     this.relatedProducts = response.data.products.data.filter((product) => {
-                        console.log(product.id, this.product.id)
-                        product.id != this.product.id 
+                        // console.log(product.id, this.product.id)
+                        return product.id != this.product.id 
                     })
                 })
         }

@@ -63,7 +63,7 @@ export const getSingleProduct = (id, formdata) => {
             let product = response.data.product
             let price = { ...product }.price[0]
             delete (product.price)
-            response.data.product = { ...product, ...price }
+            response.data.product = { ...price,...product  }
             return response;
         })
 }
