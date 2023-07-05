@@ -11,7 +11,7 @@
 					We're currently ongoing our website maintentance to make sure we serve you the best
 				</span><br>
 
-				<a class="btn bg-sg-primary mt-5 text-white font-1" href="https://wa.me/234913071412">
+				<a class="btn bg-sg-primary mt-5 text-white font-1" href="https://wa.me/2349130714128">
 					<div class="fs-6 px-2 shadow-sm">
 						Proceed to Whatsapp
 					</div>
@@ -61,7 +61,7 @@ export default {
 			setTimeout(function(){
 				_this.$toast.success("...Redirecting to whatsapp")
 				setTimeout(function(){
-					location.href = "https://wa.me/234913071412"
+					location.href = "https://wa.me/2349130714128"
 				}, 1000)
 			}, 2000)
 		}
