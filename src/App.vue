@@ -53,11 +53,14 @@ export default {
 	created() {
 		if (this.$store.getters.auth) {
 			getProfile()
-			
-			if(this.isMaintenance)
-			setTimeout(() => {
-				this.$toast.success("...Redirecting to whatsapp")
-				setTimeout(() => {
+		}
+	},
+	mounted() {
+		if (this.isMaintenance == true){
+			const _this =this
+			setTimeout(function(){
+				_this.$toast.success("...Redirecting to whatsapp")
+				setTimeout(function(){
 					location.href = "https://wa.me/234913071412"
 				}, 1000)
 			}, 2000)
@@ -105,10 +108,11 @@ export default {
 	background-size: cover;
 
 	@media screen and (min-width:768px) {
-		// background-image: url('https://media.istockphoto.com/id/515856750/photo/healthy-eating-background.jpg?s=612x612&w=0&k=20&c=yfOFP_fUFrUFdNM3nb1g0S5FNzbm28-0fSQrqaVar_M=');
+		// background-image: url('https://img.freepik.com/free-photo/fresh-vegetables-circular-frame_23-2148724958.jpg?t=st=1688531078~exp=1688531678~hmac=12a2c784d0c8542bbab009615d5602c4166f33e26a8e05c1a5b32049fa6d2f01');
 	}
 
 	@media screen and (max-width:768px) {
 		// background-image: url('https://media.istockphoto.com/id/515856750/photo/healthy-eating-background.jpg?s=612x612&w=0&k=20&c=yfOFP_fUFrUFdNM3nb1g0S5FNzbm28-0fSQrqaVar_M=');
 	}
-}</style>
+}
+</style>
