@@ -47,7 +47,7 @@ export default {
 	},
 	computed: {
 		isMaintenance() {
-			return true
+			return process.env.MAINTENANCE_MODE
 		}
 	},
 	created() {
@@ -56,7 +56,7 @@ export default {
 		}
 	},
 	mounted() {
-		if (this.isMaintenance == true){
+		if (this.isMaintenance){
 			const _this =this
 			setTimeout(function(){
 				_this.$toast.success("...Redirecting to whatsapp")
