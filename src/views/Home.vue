@@ -42,11 +42,6 @@
                         <img src="../../public/img/slides/one.png" class="h-100 w-100" />
                     </div>
                 </swiper-slide>
-                <swiper-slide class="p-2">
-                    <div>
-                        <img src="../../public/img/slides/two.png" class="h-100 w-100" />
-                    </div>
-                </swiper-slide>
             </swiper>
 
 
